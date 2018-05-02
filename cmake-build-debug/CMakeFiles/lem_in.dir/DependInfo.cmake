@@ -137,6 +137,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/rkyslyy/lem_in/libft/ft_wl.c" "/Users/rkyslyy/lem_in/cmake-build-debug/CMakeFiles/lem_in.dir/libft/ft_wl.c.o"
   "/Users/rkyslyy/lem_in/libft/get_next_line.c" "/Users/rkyslyy/lem_in/cmake-build-debug/CMakeFiles/lem_in.dir/libft/get_next_line.c.o"
   "/Users/rkyslyy/lem_in/src/ft_debug.c" "/Users/rkyslyy/lem_in/cmake-build-debug/CMakeFiles/lem_in.dir/src/ft_debug.c.o"
+  "/Users/rkyslyy/lem_in/src/ft_init_path.c" "/Users/rkyslyy/lem_in/cmake-build-debug/CMakeFiles/lem_in.dir/src/ft_init_path.c.o"
   "/Users/rkyslyy/lem_in/src/ft_paths_actions.c" "/Users/rkyslyy/lem_in/cmake-build-debug/CMakeFiles/lem_in.dir/src/ft_paths_actions.c.o"
   "/Users/rkyslyy/lem_in/src/ft_paths_checks.c" "/Users/rkyslyy/lem_in/cmake-build-debug/CMakeFiles/lem_in.dir/src/ft_paths_checks.c.o"
   "/Users/rkyslyy/lem_in/src/ft_room_actions.c" "/Users/rkyslyy/lem_in/cmake-build-debug/CMakeFiles/lem_in.dir/src/ft_room_actions.c.o"

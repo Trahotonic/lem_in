@@ -38,7 +38,7 @@ void	ft_print_path(t_path *path)
 				ft_printf(" arrived");
 			if (path->closed && path->dead_end)
 				ft_printf(" dead end");
-			ft_printf("\n");
+			ft_printf("\n\n");
 		}
 		ptr = ptr->next;
 	}

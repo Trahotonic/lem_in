@@ -142,4 +142,4 @@ add_executable(lem_in
         src/ft_debug.c
         src/ft_paths_actions.c
         src/ft_room_actions.c
-        src/main.c src/ft_paths_checks.c)
+        src/main.c src/ft_paths_checks.c src/ft_init_path.c)

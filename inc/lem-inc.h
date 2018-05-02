@@ -36,6 +36,16 @@ typedef struct		s_paths
 	struct s_paths	*next;
 }					t_paths;
 
+typedef struct      s_tools
+{
+    t_link          *link_tool;
+    t_path          *path_tool;
+    t_room          *room_tool;
+    t_paths         *paths_tool;
+    t_road          *road_tool;
+}                   t_tools;
+
+t_paths	*ft_init_path(t_room *start);
 t_room	*ft_find_last_room(t_path *path, t_room *start);
 int		ft_check_back(t_path *path, char const *room_name);
 int		ft_dead_end(t_path *path, t_room *start);

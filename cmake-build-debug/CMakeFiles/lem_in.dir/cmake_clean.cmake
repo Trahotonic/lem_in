@@ -136,6 +136,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/lem_in.dir/src/ft_room_actions.c.o"
   "CMakeFiles/lem_in.dir/src/main.c.o"
   "CMakeFiles/lem_in.dir/src/ft_paths_checks.c.o"
+  "CMakeFiles/lem_in.dir/src/ft_init_path.c.o"
   "lem_in.pdb"
   "lem_in"
 )

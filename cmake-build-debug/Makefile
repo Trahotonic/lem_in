@@ -3714,6 +3714,33 @@ src/ft_debug.c.s:
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_debug.c.s
 .PHONY : src/ft_debug.c.s
 
+src/ft_init_path.o: src/ft_init_path.c.o
+
+.PHONY : src/ft_init_path.o
+
+# target to build an object file
+src/ft_init_path.c.o:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_init_path.c.o
+.PHONY : src/ft_init_path.c.o
+
+src/ft_init_path.i: src/ft_init_path.c.i
+
+.PHONY : src/ft_init_path.i
+
+# target to preprocess a source file
+src/ft_init_path.c.i:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_init_path.c.i
+.PHONY : src/ft_init_path.c.i
+
+src/ft_init_path.s: src/ft_init_path.c.s
+
+.PHONY : src/ft_init_path.s
+
+# target to generate assembly for a file
+src/ft_init_path.c.s:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_init_path.c.s
+.PHONY : src/ft_init_path.c.s
+
 src/ft_paths_actions.o: src/ft_paths_actions.c.o
 
 .PHONY : src/ft_paths_actions.o
@@ -4230,6 +4257,9 @@ help:
 	@echo "... src/ft_debug.o"
 	@echo "... src/ft_debug.i"
 	@echo "... src/ft_debug.s"
+	@echo "... src/ft_init_path.o"
+	@echo "... src/ft_init_path.i"
+	@echo "... src/ft_init_path.s"
 	@echo "... src/ft_paths_actions.o"
 	@echo "... src/ft_paths_actions.i"
 	@echo "... src/ft_paths_actions.s"

@@ -1,41 +1,5 @@
 #include "../inc/lem-inc.h"
 
-t_paths	*ft_init_path(t_room *start)
-{
-	t_paths *paths;
-	t_paths *ptr;
-	t_link	*link;
-
-	paths = (t_paths*)malloc(sizeof(t_paths));
-	paths->next = NULL;
-	paths->path = (t_path*)malloc(sizeof(t_path));
-	paths->path->closed = 0;
-	paths->path->dead_end = 0;
-	paths->path->road = (t_road*)malloc(sizeof(t_road));
-	paths->path->road->name = ft_strdup("start");
-	paths->path->road->next = (t_road*)malloc(sizeof(t_road));
-	paths->path->road->next->next = NULL;
-	paths->path->road->next->name = start->links->name;
-	ptr = paths;
-	link = start->links->next;
-	while (link)
-	{
-		ptr->next = (t_paths*)malloc(sizeof(t_paths));
-		ptr->next->next = NULL;
-		ptr->next->path = (t_path*)malloc(sizeof(t_path));
-		ptr->next->path->closed = 0;
-		ptr->next->path->dead_end = 0;
-		ptr->next->path->road = (t_road*)malloc(sizeof(t_road));
-		ptr->next->path->road->name = ft_strdup("start");
-		ptr->next->path->road->next = (t_road*)malloc(sizeof(t_road));
-		ptr->next->path->road->next->next = NULL;
-		ptr->next->path->road->next->name = link->name;
-		ptr = ptr->next;
-		link = link->next;
-	}
-	return (paths);
-}
-
 t_room	*ft_find_last_room(t_path *path, t_room *start)
 {
 	t_road	*road_ptr;
@@ -49,20 +13,6 @@ t_room	*ft_find_last_room(t_path *path, t_room *start)
 		room_ptr = room_ptr->next;
 	return (room_ptr);
 }
-
-//int		ft_check_back(t_path *path, char const *room_name)
-//{
-//	t_road	*ptr;
-//
-//	ptr = path->road;
-//	while (ptr)
-//	{
-//		if (!ft_strcmp(ptr->name, room_name))
-//			return (1);
-//		ptr = ptr->next;
-//	}
-//	return (0);
-//}
 
 t_road		*ft_duplicate_road(t_road *road, t_link *link)
 {
@@ -87,49 +37,6 @@ t_road		*ft_duplicate_road(t_road *road, t_link *link)
 	ptr2->next->name = ft_strdup(link->name);
 	return (ret);
 }
-
-//char 		*ft_get_last_road_station(t_road *road)
-//{
-//	t_road	*ptr;
-//
-//	ptr = road;
-//	while (ptr->next)
-//		ptr = ptr->next;
-//	return (ptr->name);
-//}
-//
-//int 		ft_dead_end(t_path *path, t_room *start)
-//{
-//	t_link *last_room_links;
-//
-//	last_room_links = ft_find_last_room(path, start)->links;
-//	while (last_room_links)
-//	{
-//		if (!ft_check_back(path, last_room_links->name))
-//			return (0);
-//		last_room_links = last_room_links->next;
-//	}
-//	return (1);
-//}
-//
-//void		ft_close_paths(t_paths *paths, t_room *start)
-//{
-//	t_paths *ptr;
-//
-//	ptr = paths;
-//	while (ptr)
-//	{
-//		if (!ft_strcmp(ft_get_last_road_station(ptr->path->road), "finish"))
-//			ptr->path->closed = 1;
-//		if (ft_dead_end(ptr->path, start) &&
-//				ft_strcmp(ft_get_last_road_station(ptr->path->road), "finish"))
-//		{
-//			ptr->path->closed = 1;
-//			ptr->path->dead_end = 1;
-//		}
-//		ptr = ptr->next;
-//	}
-//}
 
 void		ft_create_new_paths(t_paths *paths, t_link *links, t_path *p)
 {
@@ -157,47 +64,29 @@ void		ft_create_new_paths(t_paths *paths, t_link *links, t_path *p)
 	}
 }
 
-//int 		ft_open_paths(t_paths *paths)
-//{
-//	t_paths *ptr;
-//
-//	ptr = paths;
-//	while (ptr)
-//	{
-//		if (ptr->path->closed == 0)
-//			return (1);
-//		ptr = ptr->next;
-//	}
-//	return (0);
-//}
-
 void		ft_get_paths(t_paths *paths, t_room *start)
 {
-	t_paths	*ptr;
-	t_room	*last_room_in_path;
-	t_road	*road_end;
 	t_link	*room_to_add;
-	t_link	*anchor;
-	t_path	*backup;
+    t_tools tools;
 
-	ptr = paths;
-	while (ptr->path->closed)
-		ptr = ptr->next;
-	last_room_in_path = ft_find_last_room(ptr->path, start);
-	road_end = ptr->path->road;
-	while (road_end->next)
-		road_end = road_end->next;
-	room_to_add = last_room_in_path->links;
-	anchor = room_to_add;
+	tools.paths_tool = paths;
+	while (tools.paths_tool->path->closed)
+        tools.paths_tool = tools.paths_tool->next;
+	tools.room_tool = ft_find_last_room(tools.paths_tool->path, start);
+	tools.road_tool = tools.paths_tool->path->road;
+	while (tools.road_tool->next)
+		tools.road_tool = tools.road_tool->next;
+	room_to_add = tools.room_tool->links;
+	tools.link_tool = room_to_add;
 	while (room_to_add)
 	{
-		backup = ptr->path;
-		if (!ft_check_back(ptr->path, room_to_add->name))
+		tools.path_tool = tools.paths_tool->path;
+		if (!ft_check_back(tools.paths_tool->path, room_to_add->name))
 		{
-			road_end->next = (t_road*)malloc(sizeof(t_road));
-			road_end->next->next = NULL;
-			road_end->next->name = room_to_add->name;
-			ft_create_new_paths(paths, anchor, backup);
+            tools.road_tool->next = (t_road*)malloc(sizeof(t_road));
+            tools.road_tool->next->next = NULL;
+            tools.road_tool->next->name = room_to_add->name;
+			ft_create_new_paths(paths, tools.link_tool, tools.path_tool);
 			break ;
 		}
 		room_to_add = room_to_add->next;
