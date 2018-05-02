@@ -28,15 +28,15 @@ void		ft_add_room(t_room **rooms, char *name)
 void		ft_add_link(char *from, char *to, t_room **rooms)
 {
 	t_room	*ptr;
-	t_link	*lnew;
+	t_link	*l_new;
 
-	lnew = (t_link*)malloc(sizeof(t_link));
-	lnew->name = ft_strdup(to);
+	l_new = (t_link*)malloc(sizeof(t_link));
+	l_new->name = ft_strdup(to);
 	ptr = *rooms;
 	while (ft_strcmp(from, ptr->room_name) && ptr != NULL)
 		ptr = ptr->next;
 	if (!ptr)
 		return (ft_putendl_fd("No such room found", 2));
-	lnew->next = ptr->links;
-	ptr->links = lnew;
+	l_new->next = ptr->links;
+	ptr->links = l_new;
 }

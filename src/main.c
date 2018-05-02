@@ -40,15 +40,8 @@ int main(void)
 	ft_add_link("finish", "6", &start);
 	ft_print_maze(start);
 	paths = ft_init_path(start);
-	ft_get_paths(paths, start);
-	ft_get_paths(paths, start);
-	ft_get_paths(paths, start);
-	ft_get_paths(paths, start);
-	ft_get_paths(paths, start);
-	ft_get_paths(paths, start);
-	ft_get_paths(paths, start);
-	ft_get_paths(paths, start);
-	ft_get_paths(paths, start);
+	while (ft_open_paths(paths))
+		ft_get_paths(paths, start);
 	ft_print_paths(paths);
 	return 0;
 }
