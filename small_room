@@ -1,0 +1,14 @@
+start = ft_new_room("start");
+	ft_add_room(&start, "2");
+	ft_add_room(&start, "3");
+	ft_add_room(&start, "finish");
+	ft_add_link("start", "2", &start);
+	ft_add_link("start", "3", &start);
+	ft_add_link("2", "start", &start);
+	ft_add_link("2", "3", &start);
+	ft_add_link("2", "finish", &start);
+	ft_add_link("3", "start", &start);
+	ft_add_link("3", "2", &start);
+	ft_add_link("3", "finish", &start);
+	ft_add_link("finish", "2", &start);
+	ft_add_link("finish", "3", &start);
