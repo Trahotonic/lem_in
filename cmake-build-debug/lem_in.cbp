@@ -499,7 +499,10 @@
 		<Unit filename="/Users/rkyslyy/lem_in/src/ft_debug.c">
 			<Option target="lem_in"/>
 		</Unit>
-		<Unit filename="/Users/rkyslyy/lem_in/src/ft_get_maze.c">
+		<Unit filename="/Users/rkyslyy/lem_in/src/ft_get_maze_part_1.c">
+			<Option target="lem_in"/>
+		</Unit>
+		<Unit filename="/Users/rkyslyy/lem_in/src/ft_get_maze_part_2.c">
 			<Option target="lem_in"/>
 		</Unit>
 		<Unit filename="/Users/rkyslyy/lem_in/src/ft_init_path.c">

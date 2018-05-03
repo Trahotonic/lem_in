@@ -3714,32 +3714,59 @@ src/ft_debug.c.s:
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_debug.c.s
 .PHONY : src/ft_debug.c.s
 
-src/ft_get_maze.o: src/ft_get_maze.c.o
+src/ft_get_maze_part_1.o: src/ft_get_maze_part_1.c.o
 
-.PHONY : src/ft_get_maze.o
+.PHONY : src/ft_get_maze_part_1.o
 
 # target to build an object file
-src/ft_get_maze.c.o:
-	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_get_maze.c.o
-.PHONY : src/ft_get_maze.c.o
+src/ft_get_maze_part_1.c.o:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_get_maze_part_1.c.o
+.PHONY : src/ft_get_maze_part_1.c.o
 
-src/ft_get_maze.i: src/ft_get_maze.c.i
+src/ft_get_maze_part_1.i: src/ft_get_maze_part_1.c.i
 
-.PHONY : src/ft_get_maze.i
+.PHONY : src/ft_get_maze_part_1.i
 
 # target to preprocess a source file
-src/ft_get_maze.c.i:
-	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_get_maze.c.i
-.PHONY : src/ft_get_maze.c.i
+src/ft_get_maze_part_1.c.i:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_get_maze_part_1.c.i
+.PHONY : src/ft_get_maze_part_1.c.i
 
-src/ft_get_maze.s: src/ft_get_maze.c.s
+src/ft_get_maze_part_1.s: src/ft_get_maze_part_1.c.s
 
-.PHONY : src/ft_get_maze.s
+.PHONY : src/ft_get_maze_part_1.s
 
 # target to generate assembly for a file
-src/ft_get_maze.c.s:
-	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_get_maze.c.s
-.PHONY : src/ft_get_maze.c.s
+src/ft_get_maze_part_1.c.s:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_get_maze_part_1.c.s
+.PHONY : src/ft_get_maze_part_1.c.s
+
+src/ft_get_maze_part_2.o: src/ft_get_maze_part_2.c.o
+
+.PHONY : src/ft_get_maze_part_2.o
+
+# target to build an object file
+src/ft_get_maze_part_2.c.o:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_get_maze_part_2.c.o
+.PHONY : src/ft_get_maze_part_2.c.o
+
+src/ft_get_maze_part_2.i: src/ft_get_maze_part_2.c.i
+
+.PHONY : src/ft_get_maze_part_2.i
+
+# target to preprocess a source file
+src/ft_get_maze_part_2.c.i:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_get_maze_part_2.c.i
+.PHONY : src/ft_get_maze_part_2.c.i
+
+src/ft_get_maze_part_2.s: src/ft_get_maze_part_2.c.s
+
+.PHONY : src/ft_get_maze_part_2.s
+
+# target to generate assembly for a file
+src/ft_get_maze_part_2.c.s:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_get_maze_part_2.c.s
+.PHONY : src/ft_get_maze_part_2.c.s
 
 src/ft_init_path.o: src/ft_init_path.c.o
 
@@ -4338,9 +4365,12 @@ help:
 	@echo "... src/ft_debug.o"
 	@echo "... src/ft_debug.i"
 	@echo "... src/ft_debug.s"
-	@echo "... src/ft_get_maze.o"
-	@echo "... src/ft_get_maze.i"
-	@echo "... src/ft_get_maze.s"
+	@echo "... src/ft_get_maze_part_1.o"
+	@echo "... src/ft_get_maze_part_1.i"
+	@echo "... src/ft_get_maze_part_1.s"
+	@echo "... src/ft_get_maze_part_2.o"
+	@echo "... src/ft_get_maze_part_2.i"
+	@echo "... src/ft_get_maze_part_2.s"
 	@echo "... src/ft_init_path.o"
 	@echo "... src/ft_init_path.i"
 	@echo "... src/ft_init_path.s"

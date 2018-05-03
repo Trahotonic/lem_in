@@ -26,6 +26,7 @@ void	ft_print_maze(t_room *start)
 		ft_printf("\n");
 		ptr = ptr->next;
 	}
+	ft_printf("____________\n");
 }
 
 void	ft_print_path(t_path *path)

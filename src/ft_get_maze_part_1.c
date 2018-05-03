@@ -107,7 +107,7 @@ int    ft_case_end(t_room **start, char **line)
     return (1);
 }
 
-int		ft_get_maze_part_1(t_room **start, size_t *ants_q)
+int		ft_get_maze_part_1(t_room **start, size_t *ants_q, char **transfer)
 {
 	char *line;
 
@@ -127,11 +127,12 @@ int		ft_get_maze_part_1(t_room **start, size_t *ants_q)
                 return (0);
 		ft_strdel(&line);
 	}
-    if (!ft_strlen(line))
+    if (!ft_strlen(line) && !ft_is_link(line))
     {
         ft_putendl_fd("Error. We found no links", 2);
         return (0);
     }
+    *transfer = ft_strdup(line);
 	ft_strdel(&line);
 	return (1);
 }

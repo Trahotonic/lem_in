@@ -21,7 +21,7 @@ t_room	*ft_new_room(char *name, int n)
 	return (ret);
 }
 
-void		ft_add_room(t_room **rooms, char *name, int n)
+void	ft_add_room(t_room **rooms, char *name, int n)
 {
 	t_room	*add;
 	t_room	*ptr;
@@ -34,7 +34,21 @@ void		ft_add_room(t_room **rooms, char *name, int n)
 	add->room_id = ptr->room_id + 1;
 }
 
-void		ft_add_link(char *from, char *to, t_room **rooms)
+int 	ft_duplicate_exists(t_link *links, char *to)
+{
+	t_link	*ptr;
+
+	ptr = links;
+	while (ptr)
+	{
+		if (ft_strequ(to, ptr->name))
+			return (1);
+		ptr = ptr->next;
+	}
+	return (0);
+}
+
+void	ft_add_link(char *from, char *to, t_room **rooms)
 {
 	t_room	*ptr;
 	t_link	*l_new;
@@ -46,6 +60,9 @@ void		ft_add_link(char *from, char *to, t_room **rooms)
 		ptr = ptr->next;
 	if (!ptr)
 		return (ft_putendl_fd("No such room found", 2));
-	l_new->next = ptr->links;
-	ptr->links = l_new;
+	if (!ft_duplicate_exists(ptr->links, to))
+	{
+		l_new->next = ptr->links;
+		ptr->links = l_new;
+	}
 }

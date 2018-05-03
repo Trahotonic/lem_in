@@ -3249,28 +3249,28 @@ CMakeFiles/lem_in.dir/src/ft_debug.c.o.provides: CMakeFiles/lem_in.dir/src/ft_de
 CMakeFiles/lem_in.dir/src/ft_debug.c.o.provides.build: CMakeFiles/lem_in.dir/src/ft_debug.c.o
 
 
-CMakeFiles/lem_in.dir/src/ft_get_maze.c.o: CMakeFiles/lem_in.dir/flags.make
-CMakeFiles/lem_in.dir/src/ft_get_maze.c.o: ../src/ft_get_maze.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rkyslyy/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_134) "Building C object CMakeFiles/lem_in.dir/src/ft_get_maze.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lem_in.dir/src/ft_get_maze.c.o   -c /Users/rkyslyy/lem_in/src/ft_get_maze.c
+CMakeFiles/lem_in.dir/src/ft_get_maze_part_1.c.o: CMakeFiles/lem_in.dir/flags.make
+CMakeFiles/lem_in.dir/src/ft_get_maze_part_1.c.o: ../src/ft_get_maze_part_1.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rkyslyy/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_134) "Building C object CMakeFiles/lem_in.dir/src/ft_get_maze_part_1.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lem_in.dir/src/ft_get_maze_part_1.c.o   -c /Users/rkyslyy/lem_in/src/ft_get_maze_part_1.c
 
-CMakeFiles/lem_in.dir/src/ft_get_maze.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lem_in.dir/src/ft_get_maze.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/rkyslyy/lem_in/src/ft_get_maze.c > CMakeFiles/lem_in.dir/src/ft_get_maze.c.i
+CMakeFiles/lem_in.dir/src/ft_get_maze_part_1.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lem_in.dir/src/ft_get_maze_part_1.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/rkyslyy/lem_in/src/ft_get_maze_part_1.c > CMakeFiles/lem_in.dir/src/ft_get_maze_part_1.c.i
 
-CMakeFiles/lem_in.dir/src/ft_get_maze.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lem_in.dir/src/ft_get_maze.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/rkyslyy/lem_in/src/ft_get_maze.c -o CMakeFiles/lem_in.dir/src/ft_get_maze.c.s
+CMakeFiles/lem_in.dir/src/ft_get_maze_part_1.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lem_in.dir/src/ft_get_maze_part_1.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/rkyslyy/lem_in/src/ft_get_maze_part_1.c -o CMakeFiles/lem_in.dir/src/ft_get_maze_part_1.c.s
 
-CMakeFiles/lem_in.dir/src/ft_get_maze.c.o.requires:
+CMakeFiles/lem_in.dir/src/ft_get_maze_part_1.c.o.requires:
 
-.PHONY : CMakeFiles/lem_in.dir/src/ft_get_maze.c.o.requires
+.PHONY : CMakeFiles/lem_in.dir/src/ft_get_maze_part_1.c.o.requires
 
-CMakeFiles/lem_in.dir/src/ft_get_maze.c.o.provides: CMakeFiles/lem_in.dir/src/ft_get_maze.c.o.requires
-	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_get_maze.c.o.provides.build
-.PHONY : CMakeFiles/lem_in.dir/src/ft_get_maze.c.o.provides
+CMakeFiles/lem_in.dir/src/ft_get_maze_part_1.c.o.provides: CMakeFiles/lem_in.dir/src/ft_get_maze_part_1.c.o.requires
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_get_maze_part_1.c.o.provides.build
+.PHONY : CMakeFiles/lem_in.dir/src/ft_get_maze_part_1.c.o.provides
 
-CMakeFiles/lem_in.dir/src/ft_get_maze.c.o.provides.build: CMakeFiles/lem_in.dir/src/ft_get_maze.c.o
+CMakeFiles/lem_in.dir/src/ft_get_maze_part_1.c.o.provides.build: CMakeFiles/lem_in.dir/src/ft_get_maze_part_1.c.o
 
 
 CMakeFiles/lem_in.dir/src/ft_init_path.c.o: CMakeFiles/lem_in.dir/flags.make
@@ -3441,6 +3441,30 @@ CMakeFiles/lem_in.dir/src/ft_maze_checks_2.c.o.provides: CMakeFiles/lem_in.dir/s
 CMakeFiles/lem_in.dir/src/ft_maze_checks_2.c.o.provides.build: CMakeFiles/lem_in.dir/src/ft_maze_checks_2.c.o
 
 
+CMakeFiles/lem_in.dir/src/ft_get_maze_part_2.c.o: CMakeFiles/lem_in.dir/flags.make
+CMakeFiles/lem_in.dir/src/ft_get_maze_part_2.c.o: ../src/ft_get_maze_part_2.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rkyslyy/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_142) "Building C object CMakeFiles/lem_in.dir/src/ft_get_maze_part_2.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/lem_in.dir/src/ft_get_maze_part_2.c.o   -c /Users/rkyslyy/lem_in/src/ft_get_maze_part_2.c
+
+CMakeFiles/lem_in.dir/src/ft_get_maze_part_2.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lem_in.dir/src/ft_get_maze_part_2.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/rkyslyy/lem_in/src/ft_get_maze_part_2.c > CMakeFiles/lem_in.dir/src/ft_get_maze_part_2.c.i
+
+CMakeFiles/lem_in.dir/src/ft_get_maze_part_2.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lem_in.dir/src/ft_get_maze_part_2.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/rkyslyy/lem_in/src/ft_get_maze_part_2.c -o CMakeFiles/lem_in.dir/src/ft_get_maze_part_2.c.s
+
+CMakeFiles/lem_in.dir/src/ft_get_maze_part_2.c.o.requires:
+
+.PHONY : CMakeFiles/lem_in.dir/src/ft_get_maze_part_2.c.o.requires
+
+CMakeFiles/lem_in.dir/src/ft_get_maze_part_2.c.o.provides: CMakeFiles/lem_in.dir/src/ft_get_maze_part_2.c.o.requires
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_get_maze_part_2.c.o.provides.build
+.PHONY : CMakeFiles/lem_in.dir/src/ft_get_maze_part_2.c.o.provides
+
+CMakeFiles/lem_in.dir/src/ft_get_maze_part_2.c.o.provides.build: CMakeFiles/lem_in.dir/src/ft_get_maze_part_2.c.o
+
+
 # Object files for target lem_in
 lem_in_OBJECTS = \
 "CMakeFiles/lem_in.dir/libft/ft_printf/srcs/collect_specs/ft_check_acc.c.o" \
@@ -3576,14 +3600,15 @@ lem_in_OBJECTS = \
 "CMakeFiles/lem_in.dir/libft/ft_wl.c.o" \
 "CMakeFiles/lem_in.dir/libft/get_next_line.c.o" \
 "CMakeFiles/lem_in.dir/src/ft_debug.c.o" \
-"CMakeFiles/lem_in.dir/src/ft_get_maze.c.o" \
+"CMakeFiles/lem_in.dir/src/ft_get_maze_part_1.c.o" \
 "CMakeFiles/lem_in.dir/src/ft_init_path.c.o" \
 "CMakeFiles/lem_in.dir/src/ft_paths_actions.c.o" \
 "CMakeFiles/lem_in.dir/src/ft_paths_checks.c.o" \
 "CMakeFiles/lem_in.dir/src/ft_room_actions.c.o" \
 "CMakeFiles/lem_in.dir/src/main.c.o" \
 "CMakeFiles/lem_in.dir/src/ft_maze_checks.c.o" \
-"CMakeFiles/lem_in.dir/src/ft_maze_checks_2.c.o"
+"CMakeFiles/lem_in.dir/src/ft_maze_checks_2.c.o" \
+"CMakeFiles/lem_in.dir/src/ft_get_maze_part_2.c.o"
 
 # External object files for target lem_in
 lem_in_EXTERNAL_OBJECTS =
@@ -3721,7 +3746,7 @@ lem_in: CMakeFiles/lem_in.dir/libft/ft_wc.c.o
 lem_in: CMakeFiles/lem_in.dir/libft/ft_wl.c.o
 lem_in: CMakeFiles/lem_in.dir/libft/get_next_line.c.o
 lem_in: CMakeFiles/lem_in.dir/src/ft_debug.c.o
-lem_in: CMakeFiles/lem_in.dir/src/ft_get_maze.c.o
+lem_in: CMakeFiles/lem_in.dir/src/ft_get_maze_part_1.c.o
 lem_in: CMakeFiles/lem_in.dir/src/ft_init_path.c.o
 lem_in: CMakeFiles/lem_in.dir/src/ft_paths_actions.c.o
 lem_in: CMakeFiles/lem_in.dir/src/ft_paths_checks.c.o
@@ -3729,9 +3754,10 @@ lem_in: CMakeFiles/lem_in.dir/src/ft_room_actions.c.o
 lem_in: CMakeFiles/lem_in.dir/src/main.c.o
 lem_in: CMakeFiles/lem_in.dir/src/ft_maze_checks.c.o
 lem_in: CMakeFiles/lem_in.dir/src/ft_maze_checks_2.c.o
+lem_in: CMakeFiles/lem_in.dir/src/ft_get_maze_part_2.c.o
 lem_in: CMakeFiles/lem_in.dir/build.make
 lem_in: CMakeFiles/lem_in.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/rkyslyy/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_142) "Linking C executable lem_in"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/rkyslyy/lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_143) "Linking C executable lem_in"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/lem_in.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -3872,7 +3898,7 @@ CMakeFiles/lem_in.dir/requires: CMakeFiles/lem_in.dir/libft/ft_wc.c.o.requires
 CMakeFiles/lem_in.dir/requires: CMakeFiles/lem_in.dir/libft/ft_wl.c.o.requires
 CMakeFiles/lem_in.dir/requires: CMakeFiles/lem_in.dir/libft/get_next_line.c.o.requires
 CMakeFiles/lem_in.dir/requires: CMakeFiles/lem_in.dir/src/ft_debug.c.o.requires
-CMakeFiles/lem_in.dir/requires: CMakeFiles/lem_in.dir/src/ft_get_maze.c.o.requires
+CMakeFiles/lem_in.dir/requires: CMakeFiles/lem_in.dir/src/ft_get_maze_part_1.c.o.requires
 CMakeFiles/lem_in.dir/requires: CMakeFiles/lem_in.dir/src/ft_init_path.c.o.requires
 CMakeFiles/lem_in.dir/requires: CMakeFiles/lem_in.dir/src/ft_paths_actions.c.o.requires
 CMakeFiles/lem_in.dir/requires: CMakeFiles/lem_in.dir/src/ft_paths_checks.c.o.requires
@@ -3880,6 +3906,7 @@ CMakeFiles/lem_in.dir/requires: CMakeFiles/lem_in.dir/src/ft_room_actions.c.o.re
 CMakeFiles/lem_in.dir/requires: CMakeFiles/lem_in.dir/src/main.c.o.requires
 CMakeFiles/lem_in.dir/requires: CMakeFiles/lem_in.dir/src/ft_maze_checks.c.o.requires
 CMakeFiles/lem_in.dir/requires: CMakeFiles/lem_in.dir/src/ft_maze_checks_2.c.o.requires
+CMakeFiles/lem_in.dir/requires: CMakeFiles/lem_in.dir/src/ft_get_maze_part_2.c.o.requires
 
 .PHONY : CMakeFiles/lem_in.dir/requires
 

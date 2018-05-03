@@ -1,6 +1,16 @@
 #include "../inc/lem-inc.h"
 
-static void ft_other_links(t_paths *paths, t_room *start)
+static t_room   *ft_start_location(t_room *start)
+{
+    t_room  *ptr;
+
+    ptr = start;
+    while (!ptr->start)
+        ptr = ptr->next;
+    return (ptr);
+}
+
+static void     ft_other_links(t_paths *paths, t_room *start)
 {
     t_paths *ptr;
     t_link  *link;
@@ -15,7 +25,7 @@ static void ft_other_links(t_paths *paths, t_room *start)
         ptr->next->path->closed = 0;
         ptr->next->path->dead_end = 0;
         ptr->next->path->road = (t_road*)malloc(sizeof(t_road));
-        ptr->next->path->road->name = ft_strdup("start");
+        ptr->next->path->road->name = ft_strdup(start->room_name);
         ptr->next->path->road->next = (t_road*)malloc(sizeof(t_road));
         ptr->next->path->road->next->next = NULL;
         ptr->next->path->road->next->name = link->name;
@@ -24,7 +34,7 @@ static void ft_other_links(t_paths *paths, t_room *start)
     }
 }
 
-t_paths	    *ft_init_path(t_room *start)
+t_paths         *ft_init_path(t_room *start)
 {
     t_paths *paths;
 
@@ -34,10 +44,10 @@ t_paths	    *ft_init_path(t_room *start)
     paths->path->closed = 0;
     paths->path->dead_end = 0;
     paths->path->road = (t_road*)malloc(sizeof(t_road));
-    paths->path->road->name = ft_strdup("start");
+    paths->path->road->name = ft_strdup(ft_start_location(start)->room_name);
     paths->path->road->next = (t_road*)malloc(sizeof(t_road));
     paths->path->road->next->next = NULL;
-    paths->path->road->next->name = start->links->name;
-    ft_other_links(paths, start);
+    paths->path->road->next->name = ft_start_location(start)->links->name;
+    ft_other_links(paths, ft_start_location(start));
     return (paths);
 }

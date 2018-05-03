@@ -148,4 +148,4 @@ add_executable(lem_in
         src/main.c
         Makefile
         my_room
-        small_room src/ft_maze_checks.c src/ft_maze_checks_2.c)
+        small_room src/ft_maze_checks.c src/ft_maze_checks_2.c src/ft_get_maze_part_2.c)
