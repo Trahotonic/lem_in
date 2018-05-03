@@ -1,6 +1,6 @@
 #include "../inc/lem-inc.h"
 
-t_room	*ft_new_room(char *name)
+t_room	*ft_new_room(char *name, int n)
 {
 	t_room	*ret;
 	char 	**dump;
@@ -12,17 +12,21 @@ t_room	*ft_new_room(char *name)
 	ret->links = NULL;
 	ret->next = NULL;
 	ret->start = 0;
+	if (n == 1)
+		ret->start = 1;
 	ret->end = 0;
+	if (n == 2)
+		ret->end = 1;
 	ft_free_dump(dump);
 	return (ret);
 }
 
-void		ft_add_room(t_room **rooms, char *name)
+void		ft_add_room(t_room **rooms, char *name, int n)
 {
 	t_room	*add;
 	t_room	*ptr;
 
-	add = ft_new_room(name);
+	add = ft_new_room(name, n);
 	ptr = *rooms;
 	while (ptr->next != NULL)
 		ptr = ptr->next;

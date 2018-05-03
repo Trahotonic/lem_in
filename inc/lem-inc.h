@@ -48,10 +48,10 @@ typedef struct      s_tools
 }                   t_tools;
 
 void	ft_free_dump(char **dump);
-t_room	*ft_new_room(char *name);
-void	ft_add_room(t_room **rooms, char *name);
+t_room	*ft_new_room(char *name, int n);
+void	ft_add_room(t_room **rooms, char *name, int n);
 void	ft_add_link(char *from, char *to, t_room **rooms);
-void	ft_get_maze(t_room **start, size_t *ants_q);
+int		ft_get_maze(t_room **start, size_t *ants_q);
 t_paths	*ft_init_path(t_room *start);
 t_room	*ft_find_last_room(t_path *path, t_room *start);
 int		ft_check_back(t_path *path, char const *room_name);
