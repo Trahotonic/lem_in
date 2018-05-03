@@ -6,7 +6,7 @@ int main(void)
 //	t_paths	*paths;
 	size_t 	ants_q;
 
-	if (!ft_get_maze(&start, &ants_q))
+	if (!ft_get_maze_part_1(&start, &ants_q))
 		return (1);
 	ft_print_maze(start);
 //	paths = ft_init_path(start);

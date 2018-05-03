@@ -14,7 +14,7 @@ int		ft_check_back(t_path *path, char const *room_name)
     return (0);
 }
 
-int 		ft_dead_end(t_path *path, t_room *start)
+int 	ft_dead_end(t_path *path, t_room *start)
 {
     t_link *last_room_links;
 
@@ -28,7 +28,7 @@ int 		ft_dead_end(t_path *path, t_room *start)
     return (1);
 }
 
-char 		*ft_get_last_road_station(t_road *road)
+char 	*ft_get_last_road_station(t_road *road)
 {
     t_road	*ptr;
 
@@ -38,7 +38,7 @@ char 		*ft_get_last_road_station(t_road *road)
     return (ptr->name);
 }
 
-void		ft_close_paths(t_paths *paths, t_room *start)
+void	ft_close_paths(t_paths *paths, t_room *start)
 {
     t_paths *ptr;
 
@@ -57,7 +57,7 @@ void		ft_close_paths(t_paths *paths, t_room *start)
     }
 }
 
-int 		ft_open_paths(t_paths *paths)
+int 	ft_open_paths(t_paths *paths)
 {
     t_paths *ptr;
 

@@ -140,6 +140,7 @@ add_executable(lem_in
         libft/get_next_line.c
         libft/libft.h
         src/ft_debug.c
+        src/ft_get_maze_part_1.c
         src/ft_init_path.c
         src/ft_paths_actions.c
         src/ft_paths_checks.c
@@ -147,4 +148,4 @@ add_executable(lem_in
         src/main.c
         Makefile
         my_room
-        small_room src/ft_get_maze.c)
+        small_room src/ft_maze_checks.c src/ft_maze_checks_2.c)
