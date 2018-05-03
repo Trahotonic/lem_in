@@ -12,6 +12,8 @@ typedef struct		s_link
 typedef struct		s_room
 {
 	char 			*room_name;
+	int 			start;
+	int 			end;
 	unsigned int	room_id;
 	t_link			*links;
 	struct s_room	*next;
@@ -45,6 +47,11 @@ typedef struct      s_tools
     t_road          *road_tool;
 }                   t_tools;
 
+void	ft_free_dump(char **dump);
+t_room	*ft_new_room(char *name);
+void	ft_add_room(t_room **rooms, char *name);
+void	ft_add_link(char *from, char *to, t_room **rooms);
+void	ft_get_maze(t_room **start, size_t *ants_q);
 t_paths	*ft_init_path(t_room *start);
 t_room	*ft_find_last_room(t_path *path, t_room *start);
 int		ft_check_back(t_path *path, char const *room_name);
@@ -52,9 +59,6 @@ int		ft_dead_end(t_path *path, t_room *start);
 char 	*ft_get_last_road_station(t_road *road);
 void	ft_close_paths(t_paths *paths, t_room *start);
 int		ft_open_paths(t_paths *paths);
-t_room	*ft_new_room(char *name);
-void	ft_add_room(t_room **rooms, char *name);
-void	ft_add_link(char *from, char *to, t_room **rooms);
 t_paths	*ft_init_path(t_room *start);
 void	ft_get_paths(t_paths *paths, t_room *start);
 void	ft_print_maze(t_room *start);

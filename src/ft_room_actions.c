@@ -2,13 +2,18 @@
 
 t_room	*ft_new_room(char *name)
 {
-	t_room *ret;
+	t_room	*ret;
+	char 	**dump;
 
+	dump = ft_strsplit(name, ' ');
 	ret = (t_room*)malloc(sizeof(t_room));
-	ret->room_name = ft_strdup(name);
+	ret->room_name = ft_strdup(dump[0]);
 	ret->room_id = 0;
 	ret->links = NULL;
 	ret->next = NULL;
+	ret->start = 0;
+	ret->end = 0;
+	ft_free_dump(dump);
 	return (ret);
 }
 

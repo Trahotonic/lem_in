@@ -48,10 +48,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/rkyslyy/lem_in
+CMAKE_SOURCE_DIR = "/Users/rkyslyy/CLionProjects/lem in"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/rkyslyy/lem_in/cmake-build-debug
+CMAKE_BINARY_DIR = "/Users/rkyslyy/CLionProjects/lem in/cmake-build-debug"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/rkyslyy/lem_in/cmake-build-debug/CMakeFiles /Users/rkyslyy/lem_in/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/rkyslyy/CLionProjects/lem in/cmake-build-debug/CMakeFiles" "/Users/rkyslyy/CLionProjects/lem in/cmake-build-debug/CMakeFiles/progress.marks"
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/rkyslyy/lem_in/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/rkyslyy/CLionProjects/lem in/cmake-build-debug/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -3714,6 +3714,33 @@ src/ft_debug.c.s:
 	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_debug.c.s
 .PHONY : src/ft_debug.c.s
 
+src/ft_get_maze.o: src/ft_get_maze.c.o
+
+.PHONY : src/ft_get_maze.o
+
+# target to build an object file
+src/ft_get_maze.c.o:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_get_maze.c.o
+.PHONY : src/ft_get_maze.c.o
+
+src/ft_get_maze.i: src/ft_get_maze.c.i
+
+.PHONY : src/ft_get_maze.i
+
+# target to preprocess a source file
+src/ft_get_maze.c.i:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_get_maze.c.i
+.PHONY : src/ft_get_maze.c.i
+
+src/ft_get_maze.s: src/ft_get_maze.c.s
+
+.PHONY : src/ft_get_maze.s
+
+# target to generate assembly for a file
+src/ft_get_maze.c.s:
+	$(MAKE) -f CMakeFiles/lem_in.dir/build.make CMakeFiles/lem_in.dir/src/ft_get_maze.c.s
+.PHONY : src/ft_get_maze.c.s
+
 src/ft_init_path.o: src/ft_init_path.c.o
 
 .PHONY : src/ft_init_path.o
@@ -4257,6 +4284,9 @@ help:
 	@echo "... src/ft_debug.o"
 	@echo "... src/ft_debug.i"
 	@echo "... src/ft_debug.s"
+	@echo "... src/ft_get_maze.o"
+	@echo "... src/ft_get_maze.i"
+	@echo "... src/ft_get_maze.s"
 	@echo "... src/ft_init_path.o"
 	@echo "... src/ft_init_path.i"
 	@echo "... src/ft_init_path.s"
