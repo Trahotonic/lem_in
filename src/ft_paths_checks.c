@@ -66,17 +66,3 @@ void	ft_close_paths(t_paths *paths, t_room *start)
         ptr = ptr->next;
     }
 }
-
-int 	ft_open_paths(t_paths *paths)
-{
-    t_paths *ptr;
-
-    ptr = paths;
-    while (ptr)
-    {
-        if (ptr->path->closed == 0)
-            return (1);
-        ptr = ptr->next;
-    }
-    return (0);
-}

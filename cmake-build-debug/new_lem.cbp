@@ -512,6 +512,9 @@
 		<Unit filename="/Users/rkyslyy/new_lem/src/ft_maze_checks_2.c">
 			<Option target="new_lem"/>
 		</Unit>
+		<Unit filename="/Users/rkyslyy/new_lem/src/ft_path_checks_2.c">
+			<Option target="new_lem"/>
+		</Unit>
 		<Unit filename="/Users/rkyslyy/new_lem/src/ft_paths_actions.c">
 			<Option target="new_lem"/>
 		</Unit>

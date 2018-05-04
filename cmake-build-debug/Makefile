@@ -3849,6 +3849,33 @@ src/ft_maze_checks_2.c.s:
 	$(MAKE) -f CMakeFiles/new_lem.dir/build.make CMakeFiles/new_lem.dir/src/ft_maze_checks_2.c.s
 .PHONY : src/ft_maze_checks_2.c.s
 
+src/ft_path_checks_2.o: src/ft_path_checks_2.c.o
+
+.PHONY : src/ft_path_checks_2.o
+
+# target to build an object file
+src/ft_path_checks_2.c.o:
+	$(MAKE) -f CMakeFiles/new_lem.dir/build.make CMakeFiles/new_lem.dir/src/ft_path_checks_2.c.o
+.PHONY : src/ft_path_checks_2.c.o
+
+src/ft_path_checks_2.i: src/ft_path_checks_2.c.i
+
+.PHONY : src/ft_path_checks_2.i
+
+# target to preprocess a source file
+src/ft_path_checks_2.c.i:
+	$(MAKE) -f CMakeFiles/new_lem.dir/build.make CMakeFiles/new_lem.dir/src/ft_path_checks_2.c.i
+.PHONY : src/ft_path_checks_2.c.i
+
+src/ft_path_checks_2.s: src/ft_path_checks_2.c.s
+
+.PHONY : src/ft_path_checks_2.s
+
+# target to generate assembly for a file
+src/ft_path_checks_2.c.s:
+	$(MAKE) -f CMakeFiles/new_lem.dir/build.make CMakeFiles/new_lem.dir/src/ft_path_checks_2.c.s
+.PHONY : src/ft_path_checks_2.c.s
+
 src/ft_paths_actions.o: src/ft_paths_actions.c.o
 
 .PHONY : src/ft_paths_actions.o
@@ -4407,6 +4434,9 @@ help:
 	@echo "... src/ft_maze_checks_2.o"
 	@echo "... src/ft_maze_checks_2.i"
 	@echo "... src/ft_maze_checks_2.s"
+	@echo "... src/ft_path_checks_2.o"
+	@echo "... src/ft_path_checks_2.i"
+	@echo "... src/ft_path_checks_2.s"
 	@echo "... src/ft_paths_actions.o"
 	@echo "... src/ft_paths_actions.i"
 	@echo "... src/ft_paths_actions.s"

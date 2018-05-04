@@ -73,6 +73,7 @@ char 		*ft_get_last_road_station(t_road *road);
 void		ft_close_paths(t_paths *paths, t_room *start);
 int			ft_open_paths(t_paths *paths);
 void		ft_get_paths(t_paths *paths, t_room *start);
+int 		ft_successful_roads(t_paths *paths);
 void		ft_print_maze(t_room *start);
 void		ft_print_path(t_path *path);
 void		ft_print_paths(t_paths *paths);

@@ -142,6 +142,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/new_lem.dir/src/ft_room_actions.c.o"
   "CMakeFiles/new_lem.dir/src/main.c.o"
   "CMakeFiles/new_lem.dir/src/ft_room_checks.c.o"
+  "CMakeFiles/new_lem.dir/src/ft_path_checks_2.c.o"
   "new_lem.pdb"
   "new_lem"
 )
