@@ -494,6 +494,9 @@
 		<Unit filename="/Users/rkyslyy/new_lem/small_room">
 			<Option target="new_lem"/>
 		</Unit>
+		<Unit filename="/Users/rkyslyy/new_lem/src/ft_ants.c">
+			<Option target="new_lem"/>
+		</Unit>
 		<Unit filename="/Users/rkyslyy/new_lem/src/ft_debug.c">
 			<Option target="new_lem"/>
 		</Unit>

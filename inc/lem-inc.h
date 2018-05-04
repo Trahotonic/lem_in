@@ -40,6 +40,12 @@ typedef struct		s_paths
 	struct s_paths	*next;
 }					t_paths;
 
+typedef struct		s_ants
+{
+	size_t 			ant_nbr;
+	struct s_ants	*next;
+}					t_ants;
+
 typedef struct      s_tools
 {
 	t_link          *link_tool;
@@ -49,6 +55,7 @@ typedef struct      s_tools
 	t_road          *road_tool;
 }                  t_tools;
 
+void		ft_print_ants(t_ants *ants);
 void		ft_free_dump(char **dump);
 int 		ft_invalid_coordinates(char *line);
 int 		ft_room_exists(t_room *start, char *line);
@@ -74,6 +81,8 @@ void		ft_close_paths(t_paths *paths, t_room *start);
 int			ft_open_paths(t_paths *paths);
 void		ft_get_paths(t_paths *paths, t_room *start);
 int 		ft_successful_roads(t_paths *paths);
+t_path		*ft_get_shortest_path(t_paths *paths);
+void		ft_get_ants(size_t ants_q, t_ants **ants);
 void		ft_print_maze(t_room *start);
 void		ft_print_path(t_path *path);
 void		ft_print_paths(t_paths *paths);

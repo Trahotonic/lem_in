@@ -3687,6 +3687,33 @@ libft/get_next_line.c.s:
 	$(MAKE) -f CMakeFiles/new_lem.dir/build.make CMakeFiles/new_lem.dir/libft/get_next_line.c.s
 .PHONY : libft/get_next_line.c.s
 
+src/ft_ants.o: src/ft_ants.c.o
+
+.PHONY : src/ft_ants.o
+
+# target to build an object file
+src/ft_ants.c.o:
+	$(MAKE) -f CMakeFiles/new_lem.dir/build.make CMakeFiles/new_lem.dir/src/ft_ants.c.o
+.PHONY : src/ft_ants.c.o
+
+src/ft_ants.i: src/ft_ants.c.i
+
+.PHONY : src/ft_ants.i
+
+# target to preprocess a source file
+src/ft_ants.c.i:
+	$(MAKE) -f CMakeFiles/new_lem.dir/build.make CMakeFiles/new_lem.dir/src/ft_ants.c.i
+.PHONY : src/ft_ants.c.i
+
+src/ft_ants.s: src/ft_ants.c.s
+
+.PHONY : src/ft_ants.s
+
+# target to generate assembly for a file
+src/ft_ants.c.s:
+	$(MAKE) -f CMakeFiles/new_lem.dir/build.make CMakeFiles/new_lem.dir/src/ft_ants.c.s
+.PHONY : src/ft_ants.c.s
+
 src/ft_debug.o: src/ft_debug.c.o
 
 .PHONY : src/ft_debug.o
@@ -4416,6 +4443,9 @@ help:
 	@echo "... libft/get_next_line.o"
 	@echo "... libft/get_next_line.i"
 	@echo "... libft/get_next_line.s"
+	@echo "... src/ft_ants.o"
+	@echo "... src/ft_ants.i"
+	@echo "... src/ft_ants.s"
 	@echo "... src/ft_debug.o"
 	@echo "... src/ft_debug.i"
 	@echo "... src/ft_debug.s"

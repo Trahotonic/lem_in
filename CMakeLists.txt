@@ -151,4 +151,4 @@ add_executable(new_lem
         src/main.c
         Makefile
         my_room
-        small_room src/ft_room_checks.c src/ft_path_checks_2.c)
+        small_room src/ft_room_checks.c src/ft_path_checks_2.c src/ft_ants.c)

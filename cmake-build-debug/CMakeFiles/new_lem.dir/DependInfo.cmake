@@ -136,6 +136,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/rkyslyy/new_lem/libft/ft_wc.c" "/Users/rkyslyy/new_lem/cmake-build-debug/CMakeFiles/new_lem.dir/libft/ft_wc.c.o"
   "/Users/rkyslyy/new_lem/libft/ft_wl.c" "/Users/rkyslyy/new_lem/cmake-build-debug/CMakeFiles/new_lem.dir/libft/ft_wl.c.o"
   "/Users/rkyslyy/new_lem/libft/get_next_line.c" "/Users/rkyslyy/new_lem/cmake-build-debug/CMakeFiles/new_lem.dir/libft/get_next_line.c.o"
+  "/Users/rkyslyy/new_lem/src/ft_ants.c" "/Users/rkyslyy/new_lem/cmake-build-debug/CMakeFiles/new_lem.dir/src/ft_ants.c.o"
   "/Users/rkyslyy/new_lem/src/ft_debug.c" "/Users/rkyslyy/new_lem/cmake-build-debug/CMakeFiles/new_lem.dir/src/ft_debug.c.o"
   "/Users/rkyslyy/new_lem/src/ft_get_maze_part_1.c" "/Users/rkyslyy/new_lem/cmake-build-debug/CMakeFiles/new_lem.dir/src/ft_get_maze_part_1.c.o"
   "/Users/rkyslyy/new_lem/src/ft_get_maze_part_2.c" "/Users/rkyslyy/new_lem/cmake-build-debug/CMakeFiles/new_lem.dir/src/ft_get_maze_part_2.c.o"

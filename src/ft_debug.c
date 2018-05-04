@@ -61,3 +61,15 @@ void	ft_print_paths(t_paths *paths)
 		ptr = ptr->next;
 	}
 }
+
+void	ft_print_ants(t_ants *ants)
+{
+	t_ants	*ptr;
+
+	ptr = ants;
+	while (ptr)
+	{
+		ft_printf("%zu\n", ptr->ant_nbr);
+		ptr = ptr->next;
+	}
+}
