@@ -8,6 +8,8 @@ t_room	*ft_new_room(char *name, int n)
 	dump = ft_strsplit(name, ' ');
 	ret = (t_room*)malloc(sizeof(t_room));
 	ret->room_name = ft_strdup(dump[0]);
+	ret->x = ft_atoi(dump[1]);
+	ret->y = ft_atoi(dump[2]);
 	ret->room_id = 0;
 	ret->links = NULL;
 	ret->next = NULL;

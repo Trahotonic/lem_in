@@ -29,6 +29,12 @@ int		ft_init_rooms(t_room **start, char *line)
 
 	if (ft_is_room(line))
 	{
+		if (ft_invalid_coordinates(line))
+		{
+			free(line);
+			ft_putendl_fd("Error", 2);
+			return (0);
+		}
 		*start = ft_new_room(line, 0);
 		free(line);
 		return (1);
@@ -117,6 +123,13 @@ int		ft_get_maze_part_1(t_room **start, size_t *ants_q, char **transfer)
 		return (0);
 	while (get_next_line(0, &line) && ft_strlen(line) && !ft_is_link(line))
 	{
+		if (ft_is_room(line) && (ft_invalid_coordinates(line) || ft_room_exists(*start, line) ||
+								ft_coordinates_exist(*start, line)))
+		{
+			ft_strdel(&line);
+			ft_putendl_fd("Error", 2);
+			return (0);
+		}
 		if (ft_is_room(line))
 			ft_add_room(start, line, 0);
 		if (ft_strequ(line, "##start"))

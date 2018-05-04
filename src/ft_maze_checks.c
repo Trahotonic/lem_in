@@ -56,11 +56,14 @@ int 		ft_is_all_digit(char *line)
     n = 0;
     work = ft_strtrim(line);
     while (work[n] != '\0')
-        if (!ft_isdigit(work[n++]))
-        {
-            free(work);
-            return (0);
-        }
+	{
+		if (!ft_isdigit(work[n]))
+		{
+			free(work);
+			return (0);
+		}
+		n += 1;
+	}
     free(work);
     return (1);
 }

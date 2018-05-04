@@ -31,9 +31,9 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/Applications/CLion.app/Contents/bin/cmake/share/cmake-3.9/Modules/Platform/UnixPaths.cmake"
   "/Applications/CLion.app/Contents/bin/cmake/share/cmake-3.9/Modules/ProcessorCount.cmake"
   "../CMakeLists.txt"
-  "CMakeFiles/3.9.6/CMakeCCompiler.cmake"
-  "CMakeFiles/3.9.6/CMakeCXXCompiler.cmake"
-  "CMakeFiles/3.9.6/CMakeSystem.cmake"
+  "CMakeFiles/3.9.4/CMakeCCompiler.cmake"
+  "CMakeFiles/3.9.4/CMakeCXXCompiler.cmake"
+  "CMakeFiles/3.9.4/CMakeSystem.cmake"
   )
 
 # The corresponding makefile is:
@@ -49,5 +49,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/lem_in.dir/DependInfo.cmake"
+  "CMakeFiles/new_lem.dir/DependInfo.cmake"
   )

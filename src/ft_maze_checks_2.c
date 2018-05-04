@@ -21,14 +21,7 @@ int 		ft_is_room(char *line)
     work = ft_strsplit(line, ' ');
     n = 0;
     while (work[n] != 0)
-    {
-        if (n != 0 && !ft_is_all_digit(work[n]))
-        {
-            ft_free_dump(work);
-            return (0);
-        }
         n += 1;
-    }
     ft_free_dump(work);
     if (n != 3)
         return (0);
@@ -49,3 +42,4 @@ int 		ft_is_link(char *line)
         return (0);
     return (1);
 }
+

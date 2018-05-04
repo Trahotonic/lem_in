@@ -1,9 +1,9 @@
 cmake_minimum_required(VERSION 3.9)
-project(lem_in)
+project(new_lem)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(lem_in
+add_executable(new_lem
         inc/lem-inc.h
         libft/ft_printf/includes/prlib.h
         libft/ft_printf/srcs/collect_specs/ft_check_acc.c
@@ -141,11 +141,14 @@ add_executable(lem_in
         libft/libft.h
         src/ft_debug.c
         src/ft_get_maze_part_1.c
+        src/ft_get_maze_part_2.c
         src/ft_init_path.c
+        src/ft_maze_checks.c
+        src/ft_maze_checks_2.c
         src/ft_paths_actions.c
         src/ft_paths_checks.c
         src/ft_room_actions.c
         src/main.c
         Makefile
         my_room
-        small_room src/ft_maze_checks.c src/ft_maze_checks_2.c src/ft_get_maze_part_2.c)
+        small_room src/ft_room_checks.c)
