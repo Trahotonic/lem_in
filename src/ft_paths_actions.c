@@ -54,6 +54,7 @@ void		ft_create_new_paths(t_paths *paths, t_link *links, t_path *p)
 		{
 			path = (t_path *) malloc(sizeof(t_path));
 			path->closed = 0;
+			path->dead_end = 0;
 			path->road = ft_duplicate_road(p->road, link_ptr);
 			paths_ptr->next = (t_paths*) malloc(sizeof(t_paths));
 			paths_ptr->next->next = NULL;
