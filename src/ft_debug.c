@@ -69,7 +69,7 @@ void	ft_print_ants(t_ants *ants)
 	ptr = ants;
 	while (ptr)
 	{
-		ft_printf("%zu\n", ptr->ant_nbr);
+		ft_printf("%zu - room \"%s\"\n", ptr->ant_nbr, ptr->road->name);
 		ptr = ptr->next;
 	}
 }

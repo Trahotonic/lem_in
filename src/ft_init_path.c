@@ -1,6 +1,6 @@
 #include "../inc/lem-inc.h"
 
-static t_room   *ft_start_location(t_room *start)
+t_room   *ft_start_location(t_room *start)
 {
     t_room  *ptr;
 
