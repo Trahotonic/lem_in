@@ -52,7 +52,6 @@ int     ft_get_maze_part_2(t_room **start, char *transfer)
         if (!ft_is_link(line) && !ft_is_comment(line))
         {
             ft_strdel(&line);
-            ft_putendl_fd("Error", 2);
             return (0);
         }
         if (ft_is_comment(line))
@@ -63,7 +62,6 @@ int     ft_get_maze_part_2(t_room **start, char *transfer)
 		if (!ft_both_rooms_exist(line, *start))
 		{
 			ft_strdel(&line);
-			ft_putendl_fd("Error", 2);
 			return (0);
 		}
         ft_add(line, start);

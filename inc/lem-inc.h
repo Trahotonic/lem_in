@@ -56,6 +56,7 @@ typedef struct      s_tools
 	t_road          *road_tool;
 }                  t_tools;
 
+int 		ft_start_end_present(t_room *start);
 t_room      *ft_start_location(t_room *start);
 char        *ft_destination(t_room *start);
 void		ft_print_ants(t_ants *ants);

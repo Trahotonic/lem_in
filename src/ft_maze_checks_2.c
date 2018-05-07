@@ -24,7 +24,7 @@ int 		ft_is_room(char *line)
         n += 1;
     ft_free_dump(work);
     if (n != 3)
-        return (0);
+		return (0);
     return (1);
 }
 
@@ -33,6 +33,8 @@ int 		ft_is_link(char *line)
     char	**work;
     size_t	n;
 
+	if (ft_is_room(line))
+		return (0);
     work = ft_strsplit(line, '-');
     n = 0;
     while (work[n] != 0)
@@ -43,3 +45,22 @@ int 		ft_is_link(char *line)
     return (1);
 }
 
+int 		ft_start_end_present(t_room *start)
+{
+	t_room	*ptr;
+	int 		ret;
+
+	ptr = start;
+	ret = 0;
+	while (ptr)
+	{
+		if (ptr->start == 1)
+			ret += 1;
+		if (ptr->end == 1)
+			ret += 1;
+		ptr = ptr->next;
+	}
+	if (ret != 2)
+		return (0);
+	return (1);
+}
