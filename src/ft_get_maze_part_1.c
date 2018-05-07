@@ -169,10 +169,9 @@ int		ft_get_maze_part_1(t_room **start, size_t *ants_q, char **transfer)
 		}
 		ft_strdel(&line);
 	}
-    if ((!ft_strlen(line) && !ft_is_link(line)) || !ft_start_end_present(*start) ||
-			ft_start_has_no_links(*start))
+    if ((!ft_strlen(line) && !ft_is_link(line)) || !ft_start_end_present(*start))
     {
-        ft_putendl_fd("Error", 1);
+		ft_putendl_fd("Error", 1);
         return (0);
     }
     *transfer = ft_strdup(line);

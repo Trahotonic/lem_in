@@ -38,6 +38,8 @@ t_paths         *ft_init_path(t_room *start)
 {
     t_paths *paths;
 
+    if (ft_start_location(start)->links == NULL)
+        return (0);
     paths = (t_paths*)malloc(sizeof(t_paths));
     paths->next = NULL;
     paths->path = (t_path*)malloc(sizeof(t_path));
