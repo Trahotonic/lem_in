@@ -1,22 +1,13 @@
 #include "../inc/lem-inc.h"
 
-int 		ft_start_has_no_links(t_room *start)
-{
-	t_room *ptr;
-
-	ptr = start;
-	while (ptr)
-	{
-		if (ptr->start == 1 && ptr->links == NULL)
-			return (1);
-		ptr = ptr->next;
-	}
-	return (0);
-}
-
 int 		ft_init_maze(size_t *ants_q, char **line)
 {
 	get_next_line(0, line);
+	while (ft_is_comment(*line))
+	{
+		ft_strdel(line);
+		get_next_line(0, line);
+	}
 	if (!ft_strlen(*line))
 	{
 		free(*line);
@@ -171,7 +162,7 @@ int		ft_get_maze_part_1(t_room **start, size_t *ants_q, char **transfer)
 	}
     if ((!ft_strlen(line) && !ft_is_link(line)) || !ft_start_end_present(*start))
     {
-		ft_putendl_fd("Error", 1);
+		ft_putendl_fd("Error. No links", 1);
         return (0);
     }
     *transfer = ft_strdup(line);

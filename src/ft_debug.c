@@ -57,7 +57,8 @@ void	ft_print_paths(t_paths *paths)
 	ptr = paths;
 	while (ptr)
 	{
-		ft_print_path(ptr->path);
+		if (ptr->path->dead_end == 0)
+			ft_print_path(ptr->path);
 		ptr = ptr->next;
 	}
 }

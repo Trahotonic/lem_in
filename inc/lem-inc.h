@@ -86,6 +86,7 @@ int			ft_open_paths(t_paths *paths);
 void		ft_get_paths(t_paths *paths, t_room *start);
 int 		ft_successful_roads(t_paths *paths);
 t_path		*ft_get_shortest_path(t_paths *paths);
+t_paths		*ft_other_short_paths(t_paths *paths, t_path *shortest);
 void		ft_get_ants(size_t ants_q, t_ants **ants, t_paths *paths);
 void		ft_print_maze(t_room *start);
 void		ft_print_path(t_path *path);

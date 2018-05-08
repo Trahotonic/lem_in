@@ -55,13 +55,16 @@ void	ft_close_paths(t_paths *paths, t_room *start)
     ptr = paths;
     while (ptr)
     {
-        if (!ft_strcmp(ft_get_last_road_station(ptr->path->road), ft_destination(start)))
+        if (!ft_strcmp(ft_get_last_road_station(ptr->path->road), ft_destination(start)) &&
+				ptr->path->closed == 0)
             ptr->path->closed = 1;
         if (ft_dead_end(ptr->path, start) &&
-            ft_strcmp(ft_get_last_road_station(ptr->path->road), ft_destination(start)))
+            ft_strcmp(ft_get_last_road_station(ptr->path->road), ft_destination(start)) &&
+				ptr->path->closed == 0)
         {
             ptr->path->closed = 1;
             ptr->path->dead_end = 1;
+            ft_print_path(ptr->path);
         }
         ptr = ptr->next;
     }
