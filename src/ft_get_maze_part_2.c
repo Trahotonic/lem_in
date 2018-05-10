@@ -2,7 +2,7 @@
 
 int 		ft_both_rooms_exist(char *line, t_room *start)
 {
-	char		**dump;
+	char	**dump;
 	t_room	*ptr;
 	int		ret;
 
@@ -46,6 +46,11 @@ int     ft_get_maze_part_2(t_room **start, char *transfer)
 {
     char *line;
 
+	if (!ft_both_rooms_exist(transfer, *start))
+	{
+		ft_strdel(&line);
+		return (0);
+	}
     ft_add(transfer, start);
     while (get_next_line(0, &line))
     {
