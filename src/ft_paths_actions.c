@@ -35,6 +35,7 @@ t_road		*ft_duplicate_road(t_road *road, t_link *link)
 	}
 	ptr2->next = (t_road*)malloc(sizeof(t_road));
 	ptr2->next->name = ft_strdup(link->name);
+	ptr2->next->next = NULL;
 	return (ret);
 }
 
@@ -52,11 +53,11 @@ void		ft_create_new_paths(t_paths *paths, t_link *links, t_path *p)
 	{
 		if (!ft_check_back(p, link_ptr->name))
 		{
-			path = (t_path *) malloc(sizeof(t_path));
+			path = (t_path*)malloc(sizeof(t_path));
 			path->closed = 0;
 			path->dead_end = 0;
 			path->road = ft_duplicate_road(p->road, link_ptr);
-			paths_ptr->next = (t_paths*) malloc(sizeof(t_paths));
+			paths_ptr->next = (t_paths*)malloc(sizeof(t_paths));
 			paths_ptr->next->next = NULL;
 			paths_ptr->next->path = path;
 			paths_ptr = paths_ptr->next;

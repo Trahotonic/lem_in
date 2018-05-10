@@ -48,6 +48,28 @@ char    *ft_destination(t_room *start)
     return (ptr->room_name);
 }
 
+void    ft_free_some_paths(t_paths *paths)
+{
+    t_paths *ptr;
+    t_paths *buff;
+
+    ptr = paths;
+    while (ptr && ptr->path->dead_end)
+        ptr = ptr->next;
+    if (ptr && ptr->next && ptr->path->dead_end)
+        ptr = ptr->next;
+    while (ptr)
+    {
+        if (ptr->next && ptr->next->next && ptr->next->path->dead_end)
+        {
+            buff = ptr->next;
+            ptr->next = ptr->next->next;
+            free(buff);
+        }
+        ptr = ptr->next;
+    }
+}
+
 void	ft_close_paths(t_paths *paths, t_room *start)
 {
     t_paths *ptr;
@@ -57,7 +79,10 @@ void	ft_close_paths(t_paths *paths, t_room *start)
     {
         if (!ft_strcmp(ft_get_last_road_station(ptr->path->road), ft_destination(start)) &&
 				ptr->path->closed == 0)
+        {
             ptr->path->closed = 1;
+            ft_print_path(ptr->path);
+        }
         if (ft_dead_end(ptr->path, start) &&
             ft_strcmp(ft_get_last_road_station(ptr->path->road), ft_destination(start)) &&
 				ptr->path->closed == 0)
