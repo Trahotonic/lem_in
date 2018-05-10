@@ -10,8 +10,8 @@ t_room	*ft_find_last_room(t_link *path)
 	return (ptr->station);
 }
 //
-//t_road		*ft_duplicate_road(t_road *road, t_link *link)
-//{
+t_link		*ft_duplicate_path(t_link *path, t_room *new_station)
+{
 //	t_road	*ret;
 //	t_road	*ptr;
 //	t_road	*ptr2;
@@ -33,10 +33,29 @@ t_room	*ft_find_last_room(t_link *path)
 //	ptr2->next->name = ft_strdup(link->name);
 //	ptr2->next->next = NULL;
 //	return (ret);
-//}
-//
-//void		ft_create_new_paths(t_paths *paths, t_link *links, t_path *p)
-//{
+    t_link  *ret;
+    t_link  *ptr;
+
+    ret = (t_link*)malloc(sizeof(t_link));
+    ret->station = path->station;
+    ret->next = NULL;
+    ptr = ret;
+    while (path->next->next)
+    {
+        ptr->next = (t_link*)malloc(sizeof(t_link));
+        ptr->next->station = path->next->station;
+        ptr->next->next = NULL;
+        ptr = ptr->next;
+        path = path->next;
+    }
+    ptr->next = (t_link*)malloc(sizeof(t_link));
+    ptr->next->station = new_station;
+    ptr->next->next = NULL;
+    return (ret);
+}
+
+void		ft_create_new_paths(t_paths *paths, t_link *links, t_link *p)
+{
 //	t_paths	*paths_ptr;
 //	t_link	*link_ptr;
 //	t_path	*path;
@@ -60,11 +79,57 @@ t_room	*ft_find_last_room(t_link *path)
 //		}
 //		link_ptr = link_ptr->next;
 //	}
-//}
-//
+    t_paths *paths_ptr;
+
+    paths_ptr = paths;
+    while (paths_ptr->next)
+        paths_ptr = paths_ptr->next;
+    while (links)
+    {
+        if (!ft_check_back(p, links->station))
+        {
+            paths_ptr->next = (t_paths*)malloc(sizeof(t_paths));
+            paths_ptr->next->path = ft_duplicate_path(p, links->station);
+            paths_ptr->next->closed = 0;
+            paths_ptr->next->dead_end = 0;
+            paths_ptr->next->next = NULL;
+            paths_ptr = paths_ptr->next;
+        }
+        links = links->next;
+    }
+}
+
 void		ft_get_paths(t_paths *paths, t_room *start)
 {
-//	t_link	*room_to_add;
+	t_paths	*paths_ptr;
+    t_link	*link_ptr;
+    t_link	*path;
+    t_link	*path_end;
+    t_link  *link_anchor;
+
+    paths_ptr = paths;
+    while (paths_ptr->closed)
+        paths_ptr = paths_ptr->next;
+    link_ptr = ft_find_last_room(paths_ptr->path)->links;
+    link_anchor = link_ptr;
+    path = paths_ptr->path;
+    path_end = path;
+    while (path_end->next)
+        path_end = path_end->next;
+    while (link_ptr)
+    {
+        if (!ft_check_back(path, link_ptr->station))
+        {
+            path_end->next = (t_link*)malloc(sizeof(t_link));
+            path_end->next->next = NULL;
+            path_end->next->station = link_ptr->station;
+            ft_create_new_paths(paths, link_anchor, path);
+            break ;
+        }
+        link_ptr = link_ptr->next;
+    }
+    ft_close_paths(paths, start);
+    //	t_link	*room_to_add;
 //    t_tools tools;
 //
 //	tools.paths_tool = paths;
@@ -90,12 +155,4 @@ void		ft_get_paths(t_paths *paths, t_room *start)
 //		room_to_add = room_to_add->next;
 //	}
 //	ft_close_paths(paths, start);
-	t_paths	*paths_ptr;
-	t_room	*room_ptr;
-
-	paths_ptr = paths;
-	while (paths_ptr->closed)
-		paths_ptr = paths_ptr->next;
-	room_ptr = ft_find_last_room(paths_ptr->path);
-
 }

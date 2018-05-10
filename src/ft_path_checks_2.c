@@ -1,18 +1,18 @@
 #include "../inc/lem-inc.h"
 
-//int 	ft_open_paths(t_paths *paths)
-//{
-//	t_paths *ptr;
-//
-//	ptr = paths;
-//	while (ptr)
-//	{
-//		if (ptr->path->closed == 0)
-//			return (1);
-//		ptr = ptr->next;
-//	}
-//	return (0);
-//}
+int 	ft_open_paths(t_paths *paths)
+{
+	t_paths *ptr;
+
+	ptr = paths;
+	while (ptr)
+	{
+		if (ptr->closed == 0)
+			return (1);
+		ptr = ptr->next;
+	}
+	return (0);
+}
 //
 //int 	ft_successful_roads(t_paths *paths)
 //{

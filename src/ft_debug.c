@@ -50,6 +50,25 @@ void	ft_print_maze(t_room *start)
 //	}
 //}
 
+//void	ft_print_path(t_link *path)
+//{
+//	while (path)
+//	{
+//		ft_printf("%s", path->station->room_name);
+//		if (path->next)
+//			ft_printf("-");
+//		else
+//		{
+//			if (path->closed && !path->dead_end)
+//				ft_printf(" arrived");
+//			if (path->closed && path->dead_end)
+//				ft_printf(" dead end");
+//			ft_printf("\n\n");
+//		}
+//		path = path->next;
+//	}
+//}
+
 void	ft_print_paths(t_paths *paths)
 {
 	t_paths *ptr;

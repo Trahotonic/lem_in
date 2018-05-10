@@ -49,7 +49,7 @@ typedef struct		s_ants
 
 int 		ft_start_end_present(t_room *start);
 t_room      *ft_start_location(t_room *start);
-char        *ft_destination(t_room *start);
+t_room      *ft_destination(t_room *start);
 void		ft_print_ants(t_ants *ants);
 void		ft_free_dump(char **dump);
 int 		ft_invalid_coordinates(char *line);
@@ -68,13 +68,13 @@ int 		ft_is_link(char *line);
 int			ft_get_maze_part_1(t_room **start, size_t *ants_q, char **transfer);
 int     	ft_get_maze_part_2(t_room **start, char *transfer);
 t_paths		*ft_init_path(t_room *start);
-//t_room		*ft_find_last_room(t_path *path, t_room *start);
-//int			ft_check_back(t_path *path, char const *room_name);
+int			ft_check_back(t_link *path, t_room *station);
+t_room      *ft_find_last_room(t_link *path);
 //int			ft_dead_end(t_path *path, t_room *start);
 //char 		*ft_get_last_road_station(t_road *road);
-//void		ft_close_paths(t_paths *paths, t_room *start);
-//int			ft_open_paths(t_paths *paths);
-//void		ft_get_paths(t_paths *paths, t_room *start);
+void		ft_close_paths(t_paths *paths, t_room *start);
+int			ft_open_paths(t_paths *paths);
+void		ft_get_paths(t_paths *paths, t_room *start);
 //int 		ft_successful_roads(t_paths *paths);
 //t_path		*ft_get_shortest_path(t_paths *paths);
 //t_paths		*ft_other_short_paths(t_paths *paths, t_path *shortest);

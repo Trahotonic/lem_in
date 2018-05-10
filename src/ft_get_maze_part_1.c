@@ -152,7 +152,7 @@ int		ft_get_maze_part_1(t_room **start, size_t *ants_q, char **transfer)
 				return (0);
 			continue;
 		}
-		if (!ft_is_room(line) && !ft_strequ(line, "##start") && !ft_strequ(line, "##end"))
+		if (!ft_is_room(line) && !ft_strequ(line, "##start") && !ft_strequ(line, "##end") && !ft_is_comment(line))
 		{
 			ft_strdel(&line);
 			ft_putendl_fd("Error", 1);

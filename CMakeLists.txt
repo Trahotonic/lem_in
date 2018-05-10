@@ -1,9 +1,9 @@
 cmake_minimum_required(VERSION 3.9)
-project(2_lem_in)
+project(lem_in_2)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(2_lem_in
+add_executable(lem_in_2
         inc/lem-inc.h
         libft/ft_printf/includes/prlib.h
         libft/ft_printf/srcs/collect_specs/ft_check_acc.c
