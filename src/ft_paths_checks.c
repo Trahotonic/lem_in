@@ -94,7 +94,7 @@ void	ft_close_paths(t_paths *paths, t_room *start)
     {
         if (ft_get_last_road_station(paths->path)->station == destination)
         {
-            ft_printf("arrived\n");
+//            ft_printf("arrived\n");
             paths->closed = 1;
         }
         if (ft_dead_end(paths->path) && ft_get_last_road_station(paths->path)->station !=

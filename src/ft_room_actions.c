@@ -13,6 +13,7 @@ t_room	*ft_new_room(char *name, int n)
 	ret->links = NULL;
 	ret->next = NULL;
 	ret->start = 0;
+	ret->depth = -1;
 	if (n == 1)
 		ret->start = 1;
 	ret->end = 0;

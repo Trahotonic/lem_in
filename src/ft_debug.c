@@ -12,6 +12,7 @@ void	ft_print_maze(t_room *start)
 			ft_printf(" start");
 		if (ptr->end == 1)
 			ft_printf(" end");
+		ft_printf(" %ld", ptr->depth);
 		ft_printf("\n");
 		ptr2 = ptr->links;
 		while (ptr2 != NULL)

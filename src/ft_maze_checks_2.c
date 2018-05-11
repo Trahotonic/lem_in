@@ -48,7 +48,7 @@ int 		ft_is_link(char *line)
 int 		ft_start_end_present(t_room *start)
 {
 	t_room	*ptr;
-	int 		ret;
+	int 	ret;
 
 	ptr = start;
 	ret = 0;
