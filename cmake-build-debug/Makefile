@@ -48,10 +48,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/rkyslyy/2_lem_in
+CMAKE_SOURCE_DIR = /Users/rkyslyy/lem_in_2
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/rkyslyy/2_lem_in/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/rkyslyy/lem_in_2/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/rkyslyy/2_lem_in/cmake-build-debug/CMakeFiles /Users/rkyslyy/2_lem_in/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/rkyslyy/lem_in_2/cmake-build-debug/CMakeFiles /Users/rkyslyy/lem_in_2/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/rkyslyy/2_lem_in/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/rkyslyy/lem_in_2/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -176,6 +176,33 @@ src/ft_debug.s: src/ft_debug.c.s
 src/ft_debug.c.s:
 	$(MAKE) -f CMakeFiles/lem_in_2.dir/build.make CMakeFiles/lem_in_2.dir/src/ft_debug.c.s
 .PHONY : src/ft_debug.c.s
+
+src/ft_find_path.o: src/ft_find_path.c.o
+
+.PHONY : src/ft_find_path.o
+
+# target to build an object file
+src/ft_find_path.c.o:
+	$(MAKE) -f CMakeFiles/lem_in_2.dir/build.make CMakeFiles/lem_in_2.dir/src/ft_find_path.c.o
+.PHONY : src/ft_find_path.c.o
+
+src/ft_find_path.i: src/ft_find_path.c.i
+
+.PHONY : src/ft_find_path.i
+
+# target to preprocess a source file
+src/ft_find_path.c.i:
+	$(MAKE) -f CMakeFiles/lem_in_2.dir/build.make CMakeFiles/lem_in_2.dir/src/ft_find_path.c.i
+.PHONY : src/ft_find_path.c.i
+
+src/ft_find_path.s: src/ft_find_path.c.s
+
+.PHONY : src/ft_find_path.s
+
+# target to generate assembly for a file
+src/ft_find_path.c.s:
+	$(MAKE) -f CMakeFiles/lem_in_2.dir/build.make CMakeFiles/lem_in_2.dir/src/ft_find_path.c.s
+.PHONY : src/ft_find_path.c.s
 
 src/ft_get_maze_part_1.o: src/ft_get_maze_part_1.c.o
 
@@ -516,6 +543,9 @@ help:
 	@echo "... src/ft_debug.o"
 	@echo "... src/ft_debug.i"
 	@echo "... src/ft_debug.s"
+	@echo "... src/ft_find_path.o"
+	@echo "... src/ft_find_path.i"
+	@echo "... src/ft_find_path.s"
 	@echo "... src/ft_get_maze_part_1.o"
 	@echo "... src/ft_get_maze_part_1.i"
 	@echo "... src/ft_get_maze_part_1.s"

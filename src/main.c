@@ -5,7 +5,7 @@ int main(void)
 	t_room	*start;
 	t_paths	*paths;
 	size_t 	ants_q;
-    char		*transfer;
+    char	*transfer;
 	t_ants	*ants;
 
 	if (!ft_get_maze_part_1(&start, &ants_q, &transfer))
@@ -21,6 +21,7 @@ int main(void)
 	ft_get_maze_part_2(&start, transfer);
 	ft_set_depth(start);
 	ft_print_maze(start);
+    ft_print_path(ft_find_path(start));
 //	paths = ft_init_path(start);
 //	if (!paths)
 //		return (ft_printf("Error\n"));

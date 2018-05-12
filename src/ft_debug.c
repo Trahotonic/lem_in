@@ -98,6 +98,19 @@ void	ft_print_paths(t_paths *paths)
 	}
 }
 
+void	ft_print_path(t_link *path)
+{
+	while (path)
+	{
+		ft_printf("%s", path->station->room_name);
+		if (path->next)
+			ft_printf("->");
+		else
+			ft_printf("\n");
+		path = path->next;
+	}
+}
+
 //void	ft_print_ants(t_ants *ants)
 //{
 //	t_ants	*ptr;

@@ -13,6 +13,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/lem_in_2.dir/src/ft_room_checks.c.o"
   "CMakeFiles/lem_in_2.dir/src/main.c.o"
   "CMakeFiles/lem_in_2.dir/src/ft_set_depth.c.o"
+  "CMakeFiles/lem_in_2.dir/src/ft_find_path.c.o"
   "lem_in_2.pdb"
   "lem_in_2"
 )

@@ -4,20 +4,21 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/Users/rkyslyy/2_lem_in/src/ft_ants.c" "/Users/rkyslyy/2_lem_in/cmake-build-debug/CMakeFiles/lem_in_2.dir/src/ft_ants.c.o"
-  "/Users/rkyslyy/2_lem_in/src/ft_debug.c" "/Users/rkyslyy/2_lem_in/cmake-build-debug/CMakeFiles/lem_in_2.dir/src/ft_debug.c.o"
-  "/Users/rkyslyy/2_lem_in/src/ft_get_maze_part_1.c" "/Users/rkyslyy/2_lem_in/cmake-build-debug/CMakeFiles/lem_in_2.dir/src/ft_get_maze_part_1.c.o"
-  "/Users/rkyslyy/2_lem_in/src/ft_get_maze_part_2.c" "/Users/rkyslyy/2_lem_in/cmake-build-debug/CMakeFiles/lem_in_2.dir/src/ft_get_maze_part_2.c.o"
-  "/Users/rkyslyy/2_lem_in/src/ft_init_path.c" "/Users/rkyslyy/2_lem_in/cmake-build-debug/CMakeFiles/lem_in_2.dir/src/ft_init_path.c.o"
-  "/Users/rkyslyy/2_lem_in/src/ft_maze_checks.c" "/Users/rkyslyy/2_lem_in/cmake-build-debug/CMakeFiles/lem_in_2.dir/src/ft_maze_checks.c.o"
-  "/Users/rkyslyy/2_lem_in/src/ft_maze_checks_2.c" "/Users/rkyslyy/2_lem_in/cmake-build-debug/CMakeFiles/lem_in_2.dir/src/ft_maze_checks_2.c.o"
-  "/Users/rkyslyy/2_lem_in/src/ft_path_checks_2.c" "/Users/rkyslyy/2_lem_in/cmake-build-debug/CMakeFiles/lem_in_2.dir/src/ft_path_checks_2.c.o"
-  "/Users/rkyslyy/2_lem_in/src/ft_paths_actions.c" "/Users/rkyslyy/2_lem_in/cmake-build-debug/CMakeFiles/lem_in_2.dir/src/ft_paths_actions.c.o"
-  "/Users/rkyslyy/2_lem_in/src/ft_paths_checks.c" "/Users/rkyslyy/2_lem_in/cmake-build-debug/CMakeFiles/lem_in_2.dir/src/ft_paths_checks.c.o"
-  "/Users/rkyslyy/2_lem_in/src/ft_room_actions.c" "/Users/rkyslyy/2_lem_in/cmake-build-debug/CMakeFiles/lem_in_2.dir/src/ft_room_actions.c.o"
-  "/Users/rkyslyy/2_lem_in/src/ft_room_checks.c" "/Users/rkyslyy/2_lem_in/cmake-build-debug/CMakeFiles/lem_in_2.dir/src/ft_room_checks.c.o"
-  "/Users/rkyslyy/2_lem_in/src/ft_set_depth.c" "/Users/rkyslyy/2_lem_in/cmake-build-debug/CMakeFiles/lem_in_2.dir/src/ft_set_depth.c.o"
-  "/Users/rkyslyy/2_lem_in/src/main.c" "/Users/rkyslyy/2_lem_in/cmake-build-debug/CMakeFiles/lem_in_2.dir/src/main.c.o"
+  "/Users/rkyslyy/lem_in_2/src/ft_ants.c" "/Users/rkyslyy/lem_in_2/cmake-build-debug/CMakeFiles/lem_in_2.dir/src/ft_ants.c.o"
+  "/Users/rkyslyy/lem_in_2/src/ft_debug.c" "/Users/rkyslyy/lem_in_2/cmake-build-debug/CMakeFiles/lem_in_2.dir/src/ft_debug.c.o"
+  "/Users/rkyslyy/lem_in_2/src/ft_find_path.c" "/Users/rkyslyy/lem_in_2/cmake-build-debug/CMakeFiles/lem_in_2.dir/src/ft_find_path.c.o"
+  "/Users/rkyslyy/lem_in_2/src/ft_get_maze_part_1.c" "/Users/rkyslyy/lem_in_2/cmake-build-debug/CMakeFiles/lem_in_2.dir/src/ft_get_maze_part_1.c.o"
+  "/Users/rkyslyy/lem_in_2/src/ft_get_maze_part_2.c" "/Users/rkyslyy/lem_in_2/cmake-build-debug/CMakeFiles/lem_in_2.dir/src/ft_get_maze_part_2.c.o"
+  "/Users/rkyslyy/lem_in_2/src/ft_init_path.c" "/Users/rkyslyy/lem_in_2/cmake-build-debug/CMakeFiles/lem_in_2.dir/src/ft_init_path.c.o"
+  "/Users/rkyslyy/lem_in_2/src/ft_maze_checks.c" "/Users/rkyslyy/lem_in_2/cmake-build-debug/CMakeFiles/lem_in_2.dir/src/ft_maze_checks.c.o"
+  "/Users/rkyslyy/lem_in_2/src/ft_maze_checks_2.c" "/Users/rkyslyy/lem_in_2/cmake-build-debug/CMakeFiles/lem_in_2.dir/src/ft_maze_checks_2.c.o"
+  "/Users/rkyslyy/lem_in_2/src/ft_path_checks_2.c" "/Users/rkyslyy/lem_in_2/cmake-build-debug/CMakeFiles/lem_in_2.dir/src/ft_path_checks_2.c.o"
+  "/Users/rkyslyy/lem_in_2/src/ft_paths_actions.c" "/Users/rkyslyy/lem_in_2/cmake-build-debug/CMakeFiles/lem_in_2.dir/src/ft_paths_actions.c.o"
+  "/Users/rkyslyy/lem_in_2/src/ft_paths_checks.c" "/Users/rkyslyy/lem_in_2/cmake-build-debug/CMakeFiles/lem_in_2.dir/src/ft_paths_checks.c.o"
+  "/Users/rkyslyy/lem_in_2/src/ft_room_actions.c" "/Users/rkyslyy/lem_in_2/cmake-build-debug/CMakeFiles/lem_in_2.dir/src/ft_room_actions.c.o"
+  "/Users/rkyslyy/lem_in_2/src/ft_room_checks.c" "/Users/rkyslyy/lem_in_2/cmake-build-debug/CMakeFiles/lem_in_2.dir/src/ft_room_checks.c.o"
+  "/Users/rkyslyy/lem_in_2/src/ft_set_depth.c" "/Users/rkyslyy/lem_in_2/cmake-build-debug/CMakeFiles/lem_in_2.dir/src/ft_set_depth.c.o"
+  "/Users/rkyslyy/lem_in_2/src/main.c" "/Users/rkyslyy/lem_in_2/cmake-build-debug/CMakeFiles/lem_in_2.dir/src/main.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 

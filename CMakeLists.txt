@@ -22,6 +22,6 @@ add_executable(lem_in_2
         src/ft_room_checks.c
         src/main.c
         Makefile
-        small_room src/ft_set_depth.c)
+        small_room src/ft_set_depth.c src/ft_find_path.c)
 
 target_link_libraries(lem_in_2 ${PROJECT_SOURCE_DIR}/libft/libft.a)

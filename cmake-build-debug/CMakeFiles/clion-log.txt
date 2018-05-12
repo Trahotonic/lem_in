@@ -1,4 +1,4 @@
-/Applications/CLion.app/Contents/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/rkyslyy/2_lem_in
+/Applications/CLion.app/Contents/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/rkyslyy/lem_in_2
 -- Configuring done
 -- Generating done
--- Build files have been written to: /Users/rkyslyy/2_lem_in/cmake-build-debug
+-- Build files have been written to: /Users/rkyslyy/lem_in_2/cmake-build-debug

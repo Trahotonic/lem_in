@@ -1,23 +1,12 @@
 #include "../inc/lem-inc.h"
 
-int 	ft_some_links_have_no_depth(t_link *links)
+int		ft_things_to_do(t_room *room)
 {
-	while (links)
+	while (room)
 	{
-		if (links->station->depth == -1)
+		if (room->depth == -1)
 			return (1);
-		links = links->next;
-	}
-	return (0);
-}
-
-int		ft_things_to_do(t_room *start)
-{
-	while (start)
-	{
-		if (start->depth != -1)
-			return (1);
-		start = start->next;
+		room = room->next;
 	}
 	return (0);
 }
@@ -40,8 +29,9 @@ void	ft_set_depth(t_room *start)
 				link = ptr->links;
 				while (link)
 				{
-					link->station->depth = depth + 1;
-					link = link->next;
+					if (link->station->depth == -1)
+						link->station->depth = depth + 1;
+                    link = link->next;
 				}
 			}
 			ptr = ptr->next;
