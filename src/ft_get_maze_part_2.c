@@ -61,6 +61,7 @@ int     ft_get_maze_part_2(t_room **start, char *transfer)
         }
         if (ft_is_comment(line))
         {
+			ft_printf("%s\n", line);
             ft_strdel(&line);
             continue;
         }
@@ -70,6 +71,7 @@ int     ft_get_maze_part_2(t_room **start, char *transfer)
 			return (0);
 		}
         ft_add(line, start);
+		ft_printf("%s\n", line);
         ft_strdel(&line);
     }
     ft_strdel(&line);

@@ -44,14 +44,12 @@ t_link  *ft_find_path(t_room *rooms)
     new->station = room;
     new->next = ret;
     ret = new;
-    checker = new->station->depth;
-    while (checker > 0)
+    while (ret->station->depth > 0)
     {
         new = (t_link*)malloc(sizeof(t_link));
         new->station = ft_get_best_room(ret->station->links);
         new->next = ret;
         ret = new;
-        checker -= 1;
     }
     return (ret);
 }
