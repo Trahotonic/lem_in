@@ -45,7 +45,7 @@ int 		ft_invalid_ants(char *line, size_t *ants_q)
     free(work);
     *ants_q = (size_t)ft_atoi(line);
     free(line);
-    if (*ants_q == 0)
+    if (*ants_q == 0 || *ants_q > 2147483647)
 		return (1);
     return (0);
 }
@@ -53,20 +53,16 @@ int 		ft_invalid_ants(char *line, size_t *ants_q)
 int 		ft_is_all_digit(char *line)
 {
     size_t	n;
-    char 	*work;
 
     n = 0;
-    work = ft_strtrim(line);
-    while (work[n] != '\0')
+    while (line[n] != '\0')
 	{
-		if (!ft_isdigit(work[n]))
+		if (!ft_isdigit(line[n]))
 		{
-			free(work);
 			return (0);
 		}
 		n += 1;
 	}
-    free(work);
     return (1);
 }
 

@@ -10,6 +10,7 @@ t_room	*ft_new_room(char *name, int n)
 	ret->room_name = ft_strdup(dump[0]);
 	ret->x = ft_atoi(dump[1]);
 	ret->y = ft_atoi(dump[2]);
+	ret->ant_nbr = 0;
 	ret->links = NULL;
 	ret->next = NULL;
 	ret->start = 0;

@@ -8,7 +8,7 @@ typedef struct s_room t_room;
 
 typedef struct		s_link
 {
-	t_room	*station;
+	t_room          *station;
 	struct s_link	*next;
 }					t_link;
 
@@ -18,6 +18,7 @@ typedef struct		s_room
 	long			x;
 	long 			y;
 	long 			depth;
+    size_t          ant_nbr;
 	int 			start;
 	int 			end;
 	t_link			*links;
@@ -73,9 +74,9 @@ void		ft_print_path(t_link *path);
 //int 		ft_successful_roads(t_paths *paths);
 //t_path		*ft_get_shortest_path(t_paths *paths);
 //t_paths		*ft_other_short_paths(t_paths *paths, t_path *shortest);
-void		ft_get_ants(size_t ants_q, t_ants **ants, t_link *path);
+//void		ft_get_ants(size_t ants_q, t_ants **ants, t_link *path);
 void		ft_print_maze(t_room *start);
 //void		ft_print_paths(t_paths *paths);
-void        ft_move_ants(t_ants *ants, t_room *start);
+void        ft_move_ants(size_t ants_q, t_link *path, t_room *rooms);
 
 #endif

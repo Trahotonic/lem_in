@@ -22,9 +22,11 @@ int main(void)
 	ft_set_depth(start);
 //	ft_print_maze(start);
     path = ft_find_path(start);
+	if (!path)
+		return (ft_printf("Error\n"));
 //    ft_print_path(path);
-	ft_get_ants(ants_q, &ants, path);
+//	ft_get_ants(ants_q, &ants, path);
 //	ft_print_ants(ants);
-    ft_move_ants(ants, start);
+    ft_move_ants(ants_q, path, start);
 	return 0;
 }
