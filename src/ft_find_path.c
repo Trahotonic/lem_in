@@ -31,7 +31,6 @@ t_link  *ft_find_path(t_room *rooms)
     t_room  *room;
     t_link  *ret;
     t_link  *new;
-    long    checker;
 
     links = ft_destination(rooms)->links;
     if (!ft_finish_has_connection_to_start(links))

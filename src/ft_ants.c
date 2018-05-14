@@ -182,11 +182,7 @@ void            ft_increase(t_link *path, size_t ants_q)
 
 void            ft_move_ants(size_t ants_q, t_link *path, t_room *rooms)
 {
-    t_link  *ptr;
-
-    ptr = path->next;
-    free(path);
-    path = ptr;
+    path = path->next;
     path->station->ant_nbr = 1;
     if (ants_q > 1)
     {
