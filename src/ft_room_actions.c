@@ -1,9 +1,21 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_room_actions.c                                  :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: rkyslyy <marvin@42.fr>                     +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2018/05/14 15:23:47 by rkyslyy           #+#    #+#             */
+/*   Updated: 2018/05/14 15:23:49 by rkyslyy          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "../inc/lem-inc.h"
 
 t_room	*ft_new_room(char *name, int n)
 {
 	t_room	*ret;
-	char 	**dump;
+	char	**dump;
 
 	dump = ft_strsplit(name, ' ');
 	ret = (t_room*)malloc(sizeof(t_room));
@@ -36,7 +48,7 @@ void	ft_add_room(t_room **rooms, char *name, int n)
 	ptr->next = add;
 }
 
-int 	ft_duplicate_exists(t_link *links, char *to)
+int		ft_duplicate_exists(t_link *links, char *to)
 {
 	t_link	*ptr;
 

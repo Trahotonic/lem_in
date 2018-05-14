@@ -40,6 +40,7 @@ typedef struct		s_ants
 	struct s_ants	*next;
 }					t_ants;
 
+int 		ft_return_error(char **line);
 int 		ft_start_end_present(t_room *start);
 t_room      *ft_start_location(t_room *start);
 t_room      *ft_destination(t_room *start);

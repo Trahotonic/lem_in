@@ -24,6 +24,7 @@ int main(void)
 	if (!path)
 		return (ft_printf("Error\n"));
 //    ft_print_path(path);
+	ft_print_maze(start);
     ft_move_ants(ants_q, path, start);
 	return 0;
 }

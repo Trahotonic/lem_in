@@ -1,2 +1,2 @@
-# Empty dependencies file for lem_in_2.
+# Empty dependencies file for 2_lem_in.
 # This may be replaced when dependencies are built.

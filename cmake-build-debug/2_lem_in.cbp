@@ -497,13 +497,13 @@
 		<Unit filename="/Users/rkyslyy/2_lem_in/src/ft_debug.c">
 			<Option target="2_lem_in"/>
 		</Unit>
+		<Unit filename="/Users/rkyslyy/2_lem_in/src/ft_find_path.c">
+			<Option target="2_lem_in"/>
+		</Unit>
 		<Unit filename="/Users/rkyslyy/2_lem_in/src/ft_get_maze_part_1.c">
 			<Option target="2_lem_in"/>
 		</Unit>
 		<Unit filename="/Users/rkyslyy/2_lem_in/src/ft_get_maze_part_2.c">
-			<Option target="2_lem_in"/>
-		</Unit>
-		<Unit filename="/Users/rkyslyy/2_lem_in/src/ft_init_path.c">
 			<Option target="2_lem_in"/>
 		</Unit>
 		<Unit filename="/Users/rkyslyy/2_lem_in/src/ft_maze_checks.c">
@@ -515,9 +515,6 @@
 		<Unit filename="/Users/rkyslyy/2_lem_in/src/ft_path_checks_2.c">
 			<Option target="2_lem_in"/>
 		</Unit>
-		<Unit filename="/Users/rkyslyy/2_lem_in/src/ft_paths_actions.c">
-			<Option target="2_lem_in"/>
-		</Unit>
 		<Unit filename="/Users/rkyslyy/2_lem_in/src/ft_paths_checks.c">
 			<Option target="2_lem_in"/>
 		</Unit>
@@ -527,7 +524,13 @@
 		<Unit filename="/Users/rkyslyy/2_lem_in/src/ft_room_checks.c">
 			<Option target="2_lem_in"/>
 		</Unit>
+		<Unit filename="/Users/rkyslyy/2_lem_in/src/ft_set_depth.c">
+			<Option target="2_lem_in"/>
+		</Unit>
 		<Unit filename="/Users/rkyslyy/2_lem_in/src/main.c">
+			<Option target="2_lem_in"/>
+		</Unit>
+		<Unit filename="/Users/rkyslyy/2_lem_in/text.txt">
 			<Option target="2_lem_in"/>
 		</Unit>
 		<Unit filename="/Users/rkyslyy/2_lem_in/CMakeLists.txt">

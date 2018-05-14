@@ -64,3 +64,13 @@ int 		ft_start_end_present(t_room *start)
 		return (0);
 	return (1);
 }
+
+t_room   *ft_start_location(t_room *start)
+{
+	t_room  *ptr;
+
+	ptr = start;
+	while (!ptr->start)
+		ptr = ptr->next;
+	return (ptr);
+}

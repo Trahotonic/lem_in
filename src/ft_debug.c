@@ -54,3 +54,11 @@ void	ft_print_ants(t_ants *ants)
 		ptr = ptr->next;
 	}
 }
+
+int 	ft_return_error(char **line)
+{
+	if (line && *line)
+		ft_strdel(line);
+	ft_putendl_fd("Error", 1);
+	return (0);
+}

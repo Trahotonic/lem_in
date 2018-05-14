@@ -1,27 +1,157 @@
 cmake_minimum_required(VERSION 3.9)
-project(lem_in_2)
+project(2_lem_in)
 
 set(CMAKE_CXX_STANDARD 11)
 
-include_directories(${PROJECT_SOURCE_DIR}/libft)
-link_directories(${PROJECT_SOURCE_DIR}/libft)
-
-add_executable(lem_in_2
+add_executable(2_lem_in
         inc/lem-inc.h
+        libft/ft_printf/includes/prlib.h
+        libft/ft_printf/srcs/collect_specs/ft_check_acc.c
+        libft/ft_printf/srcs/collect_specs/ft_check_invalid.c
+        libft/ft_printf/srcs/collect_specs/ft_collect.c
+        libft/ft_printf/srcs/collect_specs/ft_get_width.c
+        libft/ft_printf/srcs/collect_specs/ft_isdigit.c
+        libft/ft_printf/srcs/collect_specs/ft_peace_maker.c
+        libft/ft_printf/srcs/convert/ft_allow.c
+        libft/ft_printf/srcs/convert/ft_go_zero.c
+        libft/ft_printf/srcs/convert/ft_itoa_base.c
+        libft/ft_printf/srcs/convert/ft_smoker_atoi.c
+        libft/ft_printf/srcs/convert/ft_uitoa_base.c
+        libft/ft_printf/srcs/for_print/ft_break.c
+        libft/ft_printf/srcs/for_print/ft_check_sc.c
+        libft/ft_printf/srcs/for_print/ft_for_inval_wid.c
+        libft/ft_printf/srcs/for_print/ft_pick_func.c
+        libft/ft_printf/srcs/for_print/ft_put_inval_width.c
+        libft/ft_printf/srcs/make_adr/ft_equal_dis_adr.c
+        libft/ft_printf/srcs/make_adr/ft_place_adr_left.c
+        libft/ft_printf/srcs/make_adr/ft_place_adr_right.c
+        libft/ft_printf/srcs/make_adr/ft_print_adr.c
+        libft/ft_printf/srcs/make_chr/ft_equal_dis_chr.c
+        libft/ft_printf/srcs/make_chr/ft_pick_chr_type.c
+        libft/ft_printf/srcs/make_chr/ft_place_chr_left.c
+        libft/ft_printf/srcs/make_chr/ft_place_chr_right.c
+        libft/ft_printf/srcs/make_chr/ft_print_chr.c
+        libft/ft_printf/srcs/make_hex/ft_equal_dis_hex.c
+        libft/ft_printf/srcs/make_hex/ft_pick_hex_type.c
+        libft/ft_printf/srcs/make_hex/ft_place_hex_left.c
+        libft/ft_printf/srcs/make_hex/ft_place_hex_right.c
+        libft/ft_printf/srcs/make_hex/ft_print_hex.c
+        libft/ft_printf/srcs/make_int/ft_equal_dis_int.c
+        libft/ft_printf/srcs/make_int/ft_pick_int_type.c
+        libft/ft_printf/srcs/make_int/ft_place_int_left.c
+        libft/ft_printf/srcs/make_int/ft_place_int_right.c
+        libft/ft_printf/srcs/make_int/ft_print_int.c
+        libft/ft_printf/srcs/make_oct/ft_equal_dis_oct.c
+        libft/ft_printf/srcs/make_oct/ft_pick_oct_type.c
+        libft/ft_printf/srcs/make_oct/ft_place_oct_left.c
+        libft/ft_printf/srcs/make_oct/ft_place_oct_right.c
+        libft/ft_printf/srcs/make_oct/ft_print_oct.c
+        libft/ft_printf/srcs/make_per/ft_equal_dis_per.c
+        libft/ft_printf/srcs/make_per/ft_place_per_left.c
+        libft/ft_printf/srcs/make_per/ft_place_per_right.c
+        libft/ft_printf/srcs/make_per/ft_print_per.c
+        libft/ft_printf/srcs/make_str/ft_equal_dis_str.c
+        libft/ft_printf/srcs/make_str/ft_equal_unistr.c
+        libft/ft_printf/srcs/make_str/ft_pick_str_type.c
+        libft/ft_printf/srcs/make_str/ft_place_str_left.c
+        libft/ft_printf/srcs/make_str/ft_place_str_right.c
+        libft/ft_printf/srcs/make_str/ft_place_uni.c
+        libft/ft_printf/srcs/make_str/ft_place_ust_left.c
+        libft/ft_printf/srcs/make_str/ft_place_ust_right.c
+        libft/ft_printf/srcs/make_str/ft_print_str.c
+        libft/ft_printf/srcs/make_str/ft_print_unistr.c
+        libft/ft_printf/srcs/make_uns/ft_equal_dis_uns.c
+        libft/ft_printf/srcs/make_uns/ft_pick_uns_type.c
+        libft/ft_printf/srcs/make_uns/ft_place_uns_left.c
+        libft/ft_printf/srcs/make_uns/ft_place_uns_right.c
+        libft/ft_printf/srcs/make_uns/ft_print_uns.c
+        libft/ft_printf/srcs/strings/ft_putchar.c
+        libft/ft_printf/srcs/strings/ft_putstr.c
+        libft/ft_printf/srcs/strings/ft_strlen.c
+        libft/ft_printf/srcs/unicode/ft_btoi.c
+        libft/ft_printf/srcs/unicode/ft_create_mask.c
+        libft/ft_printf/srcs/unicode/ft_make_do.c
+        libft/ft_printf/srcs/unicode/ft_make_int_array.c
+        libft/ft_printf/srcs/unicode/ft_print_uni.c
+        libft/ft_printf/srcs/ft_printf.c
+        libft/ft_atoi.c
+        libft/ft_bzero.c
+        libft/ft_ch.c
+        libft/ft_filler.c
+        libft/ft_isalnum.c
+        libft/ft_isalpha.c
+        libft/ft_isascii.c
+        libft/ft_isdigit.c
+        libft/ft_isprint.c
+        libft/ft_itoa.c
+        libft/ft_lstadd.c
+        libft/ft_lstdel.c
+        libft/ft_lstdelone.c
+        libft/ft_lstiter.c
+        libft/ft_lstmap.c
+        libft/ft_lstnew.c
+        libft/ft_memalloc.c
+        libft/ft_memccpy.c
+        libft/ft_memchr.c
+        libft/ft_memcmp.c
+        libft/ft_memcpy.c
+        libft/ft_memdel.c
+        libft/ft_memmove.c
+        libft/ft_memset.c
+        libft/ft_putchar.c
+        libft/ft_putchar_fd.c
+        libft/ft_putendl.c
+        libft/ft_putendl_fd.c
+        libft/ft_putnbr.c
+        libft/ft_putnbr_fd.c
+        libft/ft_putstr.c
+        libft/ft_putstr_fd.c
+        libft/ft_size.c
+        libft/ft_strcat.c
+        libft/ft_strchr.c
+        libft/ft_strclr.c
+        libft/ft_strcmp.c
+        libft/ft_strcpy.c
+        libft/ft_strdel.c
+        libft/ft_strdup.c
+        libft/ft_strequ.c
+        libft/ft_striter.c
+        libft/ft_striteri.c
+        libft/ft_strjoin.c
+        libft/ft_strlcat.c
+        libft/ft_strlen.c
+        libft/ft_strmap.c
+        libft/ft_strmapi.c
+        libft/ft_strncat.c
+        libft/ft_strncmp.c
+        libft/ft_strncpy.c
+        libft/ft_strnequ.c
+        libft/ft_strnew.c
+        libft/ft_strnstr.c
+        libft/ft_strrchr.c
+        libft/ft_strsplit.c
+        libft/ft_strstr.c
+        libft/ft_strsub.c
+        libft/ft_strtrim.c
+        libft/ft_tolower.c
+        libft/ft_toupper.c
+        libft/ft_wc.c
+        libft/ft_wl.c
+        libft/get_next_line.c
+        libft/libft.h
         src/ft_ants.c
         src/ft_debug.c
+        src/ft_find_path.c
         src/ft_get_maze_part_1.c
         src/ft_get_maze_part_2.c
-        src/ft_init_path.c
         src/ft_maze_checks.c
         src/ft_maze_checks_2.c
         src/ft_path_checks_2.c
-        src/ft_paths_actions.c
         src/ft_paths_checks.c
         src/ft_room_actions.c
         src/ft_room_checks.c
+        src/ft_set_depth.c
         src/main.c
         Makefile
-        small_room src/ft_set_depth.c src/ft_find_path.c)
-
-target_link_libraries(lem_in_2 ${PROJECT_SOURCE_DIR}/libft/libft.a)
+        small_room
+        text.txt)
