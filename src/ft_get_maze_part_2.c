@@ -76,14 +76,16 @@ int			ft_get_maze_part_2(t_room **start, char *transfer)
 			return (ft_ret_er(&line));
 		if (ft_is_comment(line))
 		{
-			ft_printf("%s\n", line);
+			if (!ft_invalid_command(line))
+				ft_printf("%s\n", line);
 			ft_strdel(&line);
 			continue;
 		}
 		if (!ft_both_rooms_exist(line, *start))
 			return (ft_ret_er(&line));
 		ft_add(line, start);
-		ft_printf("%s\n", line);
+		if (!ft_invalid_command(line))
+			ft_printf("%s\n", line);
 		ft_strdel(&line);
 	}
 	ft_strdel(&line);

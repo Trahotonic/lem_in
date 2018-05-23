@@ -32,7 +32,8 @@ static int	ft_init_maze(size_t *ants_q, char **line)
 	get_next_line(0, line);
 	while (ft_is_comment(*line))
 	{
-		ft_printf("%s\n", *line);
+		if (!ft_invalid_command(*line))
+			ft_printf("%s\n", *line);
 		ft_strdel(line);
 		get_next_line(0, line);
 	}
@@ -47,7 +48,8 @@ static int	ft_init_rooms(t_room **start, char *line)
 	{
 		if (ft_invalid_coordinates(line))
 			return (ft_return_error(&line));
-		ft_printf("%s\n", line);
+		if (!ft_invalid_command(line))
+			ft_printf("%s\n", line);
 		*start = ft_new_room(line, 0);
 		free(line);
 		return (1);
@@ -70,7 +72,8 @@ static int	ft_init_rooms(t_room **start, char *line)
 static int	ft_end(char **transfer, char **line)
 {
 	*transfer = ft_strdup(*line);
-	ft_printf("%s\n", *line);
+	if (!ft_invalid_command(*line))
+		ft_printf("%s\n", *line);
 	ft_strdel(line);
 	return (1);
 }
