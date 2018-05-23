@@ -68,12 +68,12 @@ int			ft_get_maze_part_2(t_room **start, char *transfer)
 	char *line;
 
 	if (!ft_both_rooms_exist(transfer, *start))
-		return (ft_ret_er(&line));
+		return (ft_ret_er(&transfer));
 	ft_add(transfer, start);
 	while (get_next_line(0, &line))
 	{
 		if (!ft_is_link(line) && !ft_is_comment(line))
-			ft_ret_er(&line);
+			return (ft_ret_er(&line));
 		if (ft_is_comment(line))
 		{
 			ft_printf("%s\n", line);

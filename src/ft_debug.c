@@ -58,3 +58,12 @@ int		ft_return_error(char **line)
 	ft_putendl_fd("Error", 1);
 	return (0);
 }
+
+int		ft_invalid_command(char *line)
+{
+	if (ft_strlen(line) >= 3 && line[0] == '#' && line[1] == '#' &&
+		line[2] != '#' && !ft_strequ(line, "##start") &&
+		!ft_strequ(line, "##end"))
+		return (1);
+	return (0);
+}

@@ -17,7 +17,8 @@ static int	ft_init_maze(size_t *ants_q, char **line)
 	get_next_line(0, line);
 	while (ft_is_comment(*line))
 	{
-		ft_printf("%s\n", *line);
+		if (!ft_invalid_command(*line))
+			ft_printf("%s\n", *line);
 		ft_strdel(line);
 		get_next_line(0, line);
 	}
