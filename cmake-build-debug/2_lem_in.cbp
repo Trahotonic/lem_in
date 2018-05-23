@@ -512,7 +512,7 @@
 		<Unit filename="/Users/rkyslyy/2_lem_in/src/ft_maze_checks_2.c">
 			<Option target="2_lem_in"/>
 		</Unit>
-		<Unit filename="/Users/rkyslyy/2_lem_in/src/ft_path_checks_2.c">
+		<Unit filename="/Users/rkyslyy/2_lem_in/src/ft_part_1_helpers.c">
 			<Option target="2_lem_in"/>
 		</Unit>
 		<Unit filename="/Users/rkyslyy/2_lem_in/src/ft_paths_checks.c">

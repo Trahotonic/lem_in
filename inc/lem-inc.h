@@ -4,6 +4,7 @@
 # include "../libft/libft.h"
 # include <stdio.h>
 
+
 typedef struct s_room t_room;
 
 typedef struct		s_link
@@ -59,6 +60,11 @@ int 		ft_is_all_digit(char *line);
 int 		ft_is_comment(char *line);
 int 		ft_is_room(char *line);
 int 		ft_is_link(char *line);
+void        ft_skip_comments(char **work);
+void        ft_start_or_end(char *line, char *work, t_room **start);
+int	    	ft_case_start(t_room **start, char **line);
+int		    ft_case_end(t_room **start, char **line);
+void        ft_shmatochok(char **line);
 int			ft_get_maze_part_1(t_room **start, size_t *ants_q, char **transfer);
 int     	ft_get_maze_part_2(t_room **start, char *transfer);
 void		ft_set_depth(t_room *start);

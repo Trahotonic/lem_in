@@ -143,7 +143,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/rkyslyy/2_lem_in/src/ft_get_maze_part_2.c" "/Users/rkyslyy/2_lem_in/cmake-build-debug/CMakeFiles/2_lem_in.dir/src/ft_get_maze_part_2.c.o"
   "/Users/rkyslyy/2_lem_in/src/ft_maze_checks.c" "/Users/rkyslyy/2_lem_in/cmake-build-debug/CMakeFiles/2_lem_in.dir/src/ft_maze_checks.c.o"
   "/Users/rkyslyy/2_lem_in/src/ft_maze_checks_2.c" "/Users/rkyslyy/2_lem_in/cmake-build-debug/CMakeFiles/2_lem_in.dir/src/ft_maze_checks_2.c.o"
-  "/Users/rkyslyy/2_lem_in/src/ft_path_checks_2.c" "/Users/rkyslyy/2_lem_in/cmake-build-debug/CMakeFiles/2_lem_in.dir/src/ft_path_checks_2.c.o"
+  "/Users/rkyslyy/2_lem_in/src/ft_part_1_helpers.c" "/Users/rkyslyy/2_lem_in/cmake-build-debug/CMakeFiles/2_lem_in.dir/src/ft_part_1_helpers.c.o"
   "/Users/rkyslyy/2_lem_in/src/ft_paths_checks.c" "/Users/rkyslyy/2_lem_in/cmake-build-debug/CMakeFiles/2_lem_in.dir/src/ft_paths_checks.c.o"
   "/Users/rkyslyy/2_lem_in/src/ft_room_actions.c" "/Users/rkyslyy/2_lem_in/cmake-build-debug/CMakeFiles/2_lem_in.dir/src/ft_room_actions.c.o"
   "/Users/rkyslyy/2_lem_in/src/ft_room_checks.c" "/Users/rkyslyy/2_lem_in/cmake-build-debug/CMakeFiles/2_lem_in.dir/src/ft_room_checks.c.o"

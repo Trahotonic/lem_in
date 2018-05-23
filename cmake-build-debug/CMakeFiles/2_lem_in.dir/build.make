@@ -3393,33 +3393,9 @@ CMakeFiles/2_lem_in.dir/src/ft_maze_checks_2.c.o.provides: CMakeFiles/2_lem_in.d
 CMakeFiles/2_lem_in.dir/src/ft_maze_checks_2.c.o.provides.build: CMakeFiles/2_lem_in.dir/src/ft_maze_checks_2.c.o
 
 
-CMakeFiles/2_lem_in.dir/src/ft_path_checks_2.c.o: CMakeFiles/2_lem_in.dir/flags.make
-CMakeFiles/2_lem_in.dir/src/ft_path_checks_2.c.o: ../src/ft_path_checks_2.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rkyslyy/2_lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_140) "Building C object CMakeFiles/2_lem_in.dir/src/ft_path_checks_2.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/2_lem_in.dir/src/ft_path_checks_2.c.o   -c /Users/rkyslyy/2_lem_in/src/ft_path_checks_2.c
-
-CMakeFiles/2_lem_in.dir/src/ft_path_checks_2.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/2_lem_in.dir/src/ft_path_checks_2.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/rkyslyy/2_lem_in/src/ft_path_checks_2.c > CMakeFiles/2_lem_in.dir/src/ft_path_checks_2.c.i
-
-CMakeFiles/2_lem_in.dir/src/ft_path_checks_2.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/2_lem_in.dir/src/ft_path_checks_2.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/rkyslyy/2_lem_in/src/ft_path_checks_2.c -o CMakeFiles/2_lem_in.dir/src/ft_path_checks_2.c.s
-
-CMakeFiles/2_lem_in.dir/src/ft_path_checks_2.c.o.requires:
-
-.PHONY : CMakeFiles/2_lem_in.dir/src/ft_path_checks_2.c.o.requires
-
-CMakeFiles/2_lem_in.dir/src/ft_path_checks_2.c.o.provides: CMakeFiles/2_lem_in.dir/src/ft_path_checks_2.c.o.requires
-	$(MAKE) -f CMakeFiles/2_lem_in.dir/build.make CMakeFiles/2_lem_in.dir/src/ft_path_checks_2.c.o.provides.build
-.PHONY : CMakeFiles/2_lem_in.dir/src/ft_path_checks_2.c.o.provides
-
-CMakeFiles/2_lem_in.dir/src/ft_path_checks_2.c.o.provides.build: CMakeFiles/2_lem_in.dir/src/ft_path_checks_2.c.o
-
-
 CMakeFiles/2_lem_in.dir/src/ft_paths_checks.c.o: CMakeFiles/2_lem_in.dir/flags.make
 CMakeFiles/2_lem_in.dir/src/ft_paths_checks.c.o: ../src/ft_paths_checks.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rkyslyy/2_lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_141) "Building C object CMakeFiles/2_lem_in.dir/src/ft_paths_checks.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rkyslyy/2_lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_140) "Building C object CMakeFiles/2_lem_in.dir/src/ft_paths_checks.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/2_lem_in.dir/src/ft_paths_checks.c.o   -c /Users/rkyslyy/2_lem_in/src/ft_paths_checks.c
 
 CMakeFiles/2_lem_in.dir/src/ft_paths_checks.c.i: cmake_force
@@ -3443,7 +3419,7 @@ CMakeFiles/2_lem_in.dir/src/ft_paths_checks.c.o.provides.build: CMakeFiles/2_lem
 
 CMakeFiles/2_lem_in.dir/src/ft_room_actions.c.o: CMakeFiles/2_lem_in.dir/flags.make
 CMakeFiles/2_lem_in.dir/src/ft_room_actions.c.o: ../src/ft_room_actions.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rkyslyy/2_lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_142) "Building C object CMakeFiles/2_lem_in.dir/src/ft_room_actions.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rkyslyy/2_lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_141) "Building C object CMakeFiles/2_lem_in.dir/src/ft_room_actions.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/2_lem_in.dir/src/ft_room_actions.c.o   -c /Users/rkyslyy/2_lem_in/src/ft_room_actions.c
 
 CMakeFiles/2_lem_in.dir/src/ft_room_actions.c.i: cmake_force
@@ -3467,7 +3443,7 @@ CMakeFiles/2_lem_in.dir/src/ft_room_actions.c.o.provides.build: CMakeFiles/2_lem
 
 CMakeFiles/2_lem_in.dir/src/ft_room_checks.c.o: CMakeFiles/2_lem_in.dir/flags.make
 CMakeFiles/2_lem_in.dir/src/ft_room_checks.c.o: ../src/ft_room_checks.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rkyslyy/2_lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_143) "Building C object CMakeFiles/2_lem_in.dir/src/ft_room_checks.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rkyslyy/2_lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_142) "Building C object CMakeFiles/2_lem_in.dir/src/ft_room_checks.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/2_lem_in.dir/src/ft_room_checks.c.o   -c /Users/rkyslyy/2_lem_in/src/ft_room_checks.c
 
 CMakeFiles/2_lem_in.dir/src/ft_room_checks.c.i: cmake_force
@@ -3491,7 +3467,7 @@ CMakeFiles/2_lem_in.dir/src/ft_room_checks.c.o.provides.build: CMakeFiles/2_lem_
 
 CMakeFiles/2_lem_in.dir/src/ft_set_depth.c.o: CMakeFiles/2_lem_in.dir/flags.make
 CMakeFiles/2_lem_in.dir/src/ft_set_depth.c.o: ../src/ft_set_depth.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rkyslyy/2_lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_144) "Building C object CMakeFiles/2_lem_in.dir/src/ft_set_depth.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rkyslyy/2_lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_143) "Building C object CMakeFiles/2_lem_in.dir/src/ft_set_depth.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/2_lem_in.dir/src/ft_set_depth.c.o   -c /Users/rkyslyy/2_lem_in/src/ft_set_depth.c
 
 CMakeFiles/2_lem_in.dir/src/ft_set_depth.c.i: cmake_force
@@ -3515,7 +3491,7 @@ CMakeFiles/2_lem_in.dir/src/ft_set_depth.c.o.provides.build: CMakeFiles/2_lem_in
 
 CMakeFiles/2_lem_in.dir/src/main.c.o: CMakeFiles/2_lem_in.dir/flags.make
 CMakeFiles/2_lem_in.dir/src/main.c.o: ../src/main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rkyslyy/2_lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_145) "Building C object CMakeFiles/2_lem_in.dir/src/main.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rkyslyy/2_lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_144) "Building C object CMakeFiles/2_lem_in.dir/src/main.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/2_lem_in.dir/src/main.c.o   -c /Users/rkyslyy/2_lem_in/src/main.c
 
 CMakeFiles/2_lem_in.dir/src/main.c.i: cmake_force
@@ -3535,6 +3511,30 @@ CMakeFiles/2_lem_in.dir/src/main.c.o.provides: CMakeFiles/2_lem_in.dir/src/main.
 .PHONY : CMakeFiles/2_lem_in.dir/src/main.c.o.provides
 
 CMakeFiles/2_lem_in.dir/src/main.c.o.provides.build: CMakeFiles/2_lem_in.dir/src/main.c.o
+
+
+CMakeFiles/2_lem_in.dir/src/ft_part_1_helpers.c.o: CMakeFiles/2_lem_in.dir/flags.make
+CMakeFiles/2_lem_in.dir/src/ft_part_1_helpers.c.o: ../src/ft_part_1_helpers.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/rkyslyy/2_lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_145) "Building C object CMakeFiles/2_lem_in.dir/src/ft_part_1_helpers.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/2_lem_in.dir/src/ft_part_1_helpers.c.o   -c /Users/rkyslyy/2_lem_in/src/ft_part_1_helpers.c
+
+CMakeFiles/2_lem_in.dir/src/ft_part_1_helpers.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/2_lem_in.dir/src/ft_part_1_helpers.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/rkyslyy/2_lem_in/src/ft_part_1_helpers.c > CMakeFiles/2_lem_in.dir/src/ft_part_1_helpers.c.i
+
+CMakeFiles/2_lem_in.dir/src/ft_part_1_helpers.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/2_lem_in.dir/src/ft_part_1_helpers.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/rkyslyy/2_lem_in/src/ft_part_1_helpers.c -o CMakeFiles/2_lem_in.dir/src/ft_part_1_helpers.c.s
+
+CMakeFiles/2_lem_in.dir/src/ft_part_1_helpers.c.o.requires:
+
+.PHONY : CMakeFiles/2_lem_in.dir/src/ft_part_1_helpers.c.o.requires
+
+CMakeFiles/2_lem_in.dir/src/ft_part_1_helpers.c.o.provides: CMakeFiles/2_lem_in.dir/src/ft_part_1_helpers.c.o.requires
+	$(MAKE) -f CMakeFiles/2_lem_in.dir/build.make CMakeFiles/2_lem_in.dir/src/ft_part_1_helpers.c.o.provides.build
+.PHONY : CMakeFiles/2_lem_in.dir/src/ft_part_1_helpers.c.o.provides
+
+CMakeFiles/2_lem_in.dir/src/ft_part_1_helpers.c.o.provides.build: CMakeFiles/2_lem_in.dir/src/ft_part_1_helpers.c.o
 
 
 # Object files for target 2_lem_in
@@ -3678,12 +3678,12 @@ CMakeFiles/2_lem_in.dir/src/main.c.o.provides.build: CMakeFiles/2_lem_in.dir/src
 "CMakeFiles/2_lem_in.dir/src/ft_get_maze_part_2.c.o" \
 "CMakeFiles/2_lem_in.dir/src/ft_maze_checks.c.o" \
 "CMakeFiles/2_lem_in.dir/src/ft_maze_checks_2.c.o" \
-"CMakeFiles/2_lem_in.dir/src/ft_path_checks_2.c.o" \
 "CMakeFiles/2_lem_in.dir/src/ft_paths_checks.c.o" \
 "CMakeFiles/2_lem_in.dir/src/ft_room_actions.c.o" \
 "CMakeFiles/2_lem_in.dir/src/ft_room_checks.c.o" \
 "CMakeFiles/2_lem_in.dir/src/ft_set_depth.c.o" \
-"CMakeFiles/2_lem_in.dir/src/main.c.o"
+"CMakeFiles/2_lem_in.dir/src/main.c.o" \
+"CMakeFiles/2_lem_in.dir/src/ft_part_1_helpers.c.o"
 
 # External object files for target 2_lem_in
 2_lem_in_EXTERNAL_OBJECTS =
@@ -3827,12 +3827,12 @@ CMakeFiles/2_lem_in.dir/src/main.c.o.provides.build: CMakeFiles/2_lem_in.dir/src
 2_lem_in: CMakeFiles/2_lem_in.dir/src/ft_get_maze_part_2.c.o
 2_lem_in: CMakeFiles/2_lem_in.dir/src/ft_maze_checks.c.o
 2_lem_in: CMakeFiles/2_lem_in.dir/src/ft_maze_checks_2.c.o
-2_lem_in: CMakeFiles/2_lem_in.dir/src/ft_path_checks_2.c.o
 2_lem_in: CMakeFiles/2_lem_in.dir/src/ft_paths_checks.c.o
 2_lem_in: CMakeFiles/2_lem_in.dir/src/ft_room_actions.c.o
 2_lem_in: CMakeFiles/2_lem_in.dir/src/ft_room_checks.c.o
 2_lem_in: CMakeFiles/2_lem_in.dir/src/ft_set_depth.c.o
 2_lem_in: CMakeFiles/2_lem_in.dir/src/main.c.o
+2_lem_in: CMakeFiles/2_lem_in.dir/src/ft_part_1_helpers.c.o
 2_lem_in: CMakeFiles/2_lem_in.dir/build.make
 2_lem_in: CMakeFiles/2_lem_in.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/rkyslyy/2_lem_in/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_146) "Linking C executable 2_lem_in"
@@ -3982,12 +3982,12 @@ CMakeFiles/2_lem_in.dir/requires: CMakeFiles/2_lem_in.dir/src/ft_get_maze_part_1
 CMakeFiles/2_lem_in.dir/requires: CMakeFiles/2_lem_in.dir/src/ft_get_maze_part_2.c.o.requires
 CMakeFiles/2_lem_in.dir/requires: CMakeFiles/2_lem_in.dir/src/ft_maze_checks.c.o.requires
 CMakeFiles/2_lem_in.dir/requires: CMakeFiles/2_lem_in.dir/src/ft_maze_checks_2.c.o.requires
-CMakeFiles/2_lem_in.dir/requires: CMakeFiles/2_lem_in.dir/src/ft_path_checks_2.c.o.requires
 CMakeFiles/2_lem_in.dir/requires: CMakeFiles/2_lem_in.dir/src/ft_paths_checks.c.o.requires
 CMakeFiles/2_lem_in.dir/requires: CMakeFiles/2_lem_in.dir/src/ft_room_actions.c.o.requires
 CMakeFiles/2_lem_in.dir/requires: CMakeFiles/2_lem_in.dir/src/ft_room_checks.c.o.requires
 CMakeFiles/2_lem_in.dir/requires: CMakeFiles/2_lem_in.dir/src/ft_set_depth.c.o.requires
 CMakeFiles/2_lem_in.dir/requires: CMakeFiles/2_lem_in.dir/src/main.c.o.requires
+CMakeFiles/2_lem_in.dir/requires: CMakeFiles/2_lem_in.dir/src/ft_part_1_helpers.c.o.requires
 
 .PHONY : CMakeFiles/2_lem_in.dir/requires
 

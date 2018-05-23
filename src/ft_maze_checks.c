@@ -44,6 +44,7 @@ int 		ft_invalid_ants(char *line, size_t *ants_q)
         }
     free(work);
     *ants_q = (size_t)ft_atoi(line);
+    ft_printf("%s\n", line);
     free(line);
     if (*ants_q == 0 || *ants_q > 2147483647)
 		return (1);

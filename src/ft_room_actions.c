@@ -48,20 +48,6 @@ void	ft_add_room(t_room **rooms, char *name, int n)
 	ptr->next = add;
 }
 
-int		ft_duplicate_exists(t_link *links, char *to)
-{
-	t_link	*ptr;
-
-	ptr = links;
-	while (ptr)
-	{
-		if (ft_strequ(to, ptr->station->room_name))
-			return (1);
-		ptr = ptr->next;
-	}
-	return (0);
-}
-
 void	ft_add_link(char *from, char *to, t_room **rooms)
 {
 	t_room	*ptr_to;

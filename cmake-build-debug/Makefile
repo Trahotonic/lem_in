@@ -3876,32 +3876,32 @@ src/ft_maze_checks_2.c.s:
 	$(MAKE) -f CMakeFiles/2_lem_in.dir/build.make CMakeFiles/2_lem_in.dir/src/ft_maze_checks_2.c.s
 .PHONY : src/ft_maze_checks_2.c.s
 
-src/ft_path_checks_2.o: src/ft_path_checks_2.c.o
+src/ft_part_1_helpers.o: src/ft_part_1_helpers.c.o
 
-.PHONY : src/ft_path_checks_2.o
+.PHONY : src/ft_part_1_helpers.o
 
 # target to build an object file
-src/ft_path_checks_2.c.o:
-	$(MAKE) -f CMakeFiles/2_lem_in.dir/build.make CMakeFiles/2_lem_in.dir/src/ft_path_checks_2.c.o
-.PHONY : src/ft_path_checks_2.c.o
+src/ft_part_1_helpers.c.o:
+	$(MAKE) -f CMakeFiles/2_lem_in.dir/build.make CMakeFiles/2_lem_in.dir/src/ft_part_1_helpers.c.o
+.PHONY : src/ft_part_1_helpers.c.o
 
-src/ft_path_checks_2.i: src/ft_path_checks_2.c.i
+src/ft_part_1_helpers.i: src/ft_part_1_helpers.c.i
 
-.PHONY : src/ft_path_checks_2.i
+.PHONY : src/ft_part_1_helpers.i
 
 # target to preprocess a source file
-src/ft_path_checks_2.c.i:
-	$(MAKE) -f CMakeFiles/2_lem_in.dir/build.make CMakeFiles/2_lem_in.dir/src/ft_path_checks_2.c.i
-.PHONY : src/ft_path_checks_2.c.i
+src/ft_part_1_helpers.c.i:
+	$(MAKE) -f CMakeFiles/2_lem_in.dir/build.make CMakeFiles/2_lem_in.dir/src/ft_part_1_helpers.c.i
+.PHONY : src/ft_part_1_helpers.c.i
 
-src/ft_path_checks_2.s: src/ft_path_checks_2.c.s
+src/ft_part_1_helpers.s: src/ft_part_1_helpers.c.s
 
-.PHONY : src/ft_path_checks_2.s
+.PHONY : src/ft_part_1_helpers.s
 
 # target to generate assembly for a file
-src/ft_path_checks_2.c.s:
-	$(MAKE) -f CMakeFiles/2_lem_in.dir/build.make CMakeFiles/2_lem_in.dir/src/ft_path_checks_2.c.s
-.PHONY : src/ft_path_checks_2.c.s
+src/ft_part_1_helpers.c.s:
+	$(MAKE) -f CMakeFiles/2_lem_in.dir/build.make CMakeFiles/2_lem_in.dir/src/ft_part_1_helpers.c.s
+.PHONY : src/ft_part_1_helpers.c.s
 
 src/ft_paths_checks.o: src/ft_paths_checks.c.o
 
@@ -4464,9 +4464,9 @@ help:
 	@echo "... src/ft_maze_checks_2.o"
 	@echo "... src/ft_maze_checks_2.i"
 	@echo "... src/ft_maze_checks_2.s"
-	@echo "... src/ft_path_checks_2.o"
-	@echo "... src/ft_path_checks_2.i"
-	@echo "... src/ft_path_checks_2.s"
+	@echo "... src/ft_part_1_helpers.o"
+	@echo "... src/ft_part_1_helpers.i"
+	@echo "... src/ft_part_1_helpers.s"
 	@echo "... src/ft_paths_checks.o"
 	@echo "... src/ft_paths_checks.i"
 	@echo "... src/ft_paths_checks.s"

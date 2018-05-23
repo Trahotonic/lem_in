@@ -1,5 +1,17 @@
 #include "../inc/lem-inc.h"
 
+static int  ft_ret_er(char **line)
+{
+	ft_strdel(line);
+	return (0);
+}
+
+static int  ft_ret_dump(char **dump)
+{
+	ft_free_dump(dump);
+	return (0);
+}
+
 int 		ft_both_rooms_exist(char *line, t_room *start)
 {
 	char	**dump;
@@ -16,10 +28,7 @@ int 		ft_both_rooms_exist(char *line, t_room *start)
 		ptr = ptr->next;
 	}
 	if (!ret)
-	{
-		ft_free_dump(dump);
-		return (0);
-	}
+		return (ft_ret_dump(dump));
 	ret = 0;
 	ptr = start;
 	while (ptr)
@@ -55,10 +64,7 @@ int     ft_get_maze_part_2(t_room **start, char *transfer)
     while (get_next_line(0, &line))
     {
 		if (!ft_is_link(line) && !ft_is_comment(line))
-        {
-            ft_strdel(&line);
-            return (0);
-        }
+            ft_ret_er(&line);
         if (ft_is_comment(line))
         {
 			ft_printf("%s\n", line);
@@ -66,10 +72,7 @@ int     ft_get_maze_part_2(t_room **start, char *transfer)
             continue;
         }
 		if (!ft_both_rooms_exist(line, *start))
-		{
-			ft_strdel(&line);
-			return (0);
-		}
+			return (ft_ret_er(&line));
         ft_add(line, start);
 		ft_printf("%s\n", line);
         ft_strdel(&line);

@@ -138,12 +138,12 @@ file(REMOVE_RECURSE
   "CMakeFiles/2_lem_in.dir/src/ft_get_maze_part_2.c.o"
   "CMakeFiles/2_lem_in.dir/src/ft_maze_checks.c.o"
   "CMakeFiles/2_lem_in.dir/src/ft_maze_checks_2.c.o"
-  "CMakeFiles/2_lem_in.dir/src/ft_path_checks_2.c.o"
   "CMakeFiles/2_lem_in.dir/src/ft_paths_checks.c.o"
   "CMakeFiles/2_lem_in.dir/src/ft_room_actions.c.o"
   "CMakeFiles/2_lem_in.dir/src/ft_room_checks.c.o"
   "CMakeFiles/2_lem_in.dir/src/ft_set_depth.c.o"
   "CMakeFiles/2_lem_in.dir/src/main.c.o"
+  "CMakeFiles/2_lem_in.dir/src/ft_part_1_helpers.c.o"
   "2_lem_in.pdb"
   "2_lem_in"
 )

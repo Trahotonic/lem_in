@@ -43,18 +43,6 @@ void	ft_print_path(t_link *path)
 	}
 }
 
-void	ft_print_ants(t_ants *ants)
-{
-	t_ants	*ptr;
-
-	ptr = ants;
-	while (ptr)
-	{
-		ft_printf("%zu - room \"%s\"\n", ptr->ant_nbr, ptr->road->station->room_name);
-		ptr = ptr->next;
-	}
-}
-
 int 	ft_return_error(char **line)
 {
 	if (line && *line)

@@ -146,7 +146,6 @@ add_executable(2_lem_in
         src/ft_get_maze_part_2.c
         src/ft_maze_checks.c
         src/ft_maze_checks_2.c
-        src/ft_path_checks_2.c
         src/ft_paths_checks.c
         src/ft_room_actions.c
         src/ft_room_checks.c
@@ -154,4 +153,4 @@ add_executable(2_lem_in
         src/main.c
         Makefile
         small_room
-        text.txt)
+        text.txt src/ft_part_1_helpers.c)
