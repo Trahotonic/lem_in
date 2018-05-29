@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../inc/lem-inc.h"
+#include "../inc/lemin.h"
 
 int	ft_start_exists(t_room *start)
 {

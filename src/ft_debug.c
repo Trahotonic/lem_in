@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../inc/lem-inc.h"
+#include "../inc/lemin.h"
 
 void	ft_print_maze(t_room *start)
 {
@@ -25,12 +25,12 @@ void	ft_print_maze(t_room *start)
 			ft_printf(" start");
 		if (ptr->end == 1)
 			ft_printf(" end");
-		ft_printf(" %ld\n", ptr->depth);
+		ft_printf("\nDepth = %ld\nLinks: ", ptr->depth);
 		ptr2 = ptr->links;
 		while (ptr2 != NULL)
 		{
 			ft_printf("%s", ptr2->station->room_name);
-			ptr2->next ? ft_printf("-") : ft_printf("\n");
+			ptr2->next ? ft_printf(", ") : ft_printf("\n");
 			ptr2 = ptr2->next;
 		}
 		ft_printf("\n");
@@ -40,13 +40,14 @@ void	ft_print_maze(t_room *start)
 
 void	ft_print_path(t_link *path)
 {
+	ft_printf("Shortest path: ");
 	while (path)
 	{
 		ft_printf("%s", path->station->room_name);
 		if (path->next)
 			ft_printf("->");
 		else
-			ft_printf("\n");
+			ft_printf("\n\n");
 		path = path->next;
 	}
 }

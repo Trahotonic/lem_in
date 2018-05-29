@@ -1,23 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_paths_checks.c                                  :+:      :+:    :+:   */
+/*   backup.h                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rkyslyy <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/05/22 15:21:19 by rkyslyy           #+#    #+#             */
-/*   Updated: 2018/05/22 15:21:20 by rkyslyy          ###   ########.fr       */
+/*   Created: 2018/05/29 14:38:57 by rkyslyy           #+#    #+#             */
+/*   Updated: 2018/05/29 14:38:57 by rkyslyy          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../inc/lemin.h"
+#ifndef BACKUP_H
+# define BACKUP_H
 
-t_room	*ft_destination(t_room *start)
+typedef struct s_link	t_link;
+
+typedef struct		s_room
 {
-	t_room	*ptr;
+	char			*room_name;
+	long			x;
+	long			y;
+	long			depth;
+	size_t			ant_nbr;
+	int				start;
+	int				end;
+	t_link			*links;
+	struct s_room	*next;
+}					t_room;
 
-	ptr = start;
-	while (!ptr->end)
-		ptr = ptr->next;
-	return (ptr);
-}
+#endif

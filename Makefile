@@ -12,7 +12,7 @@ LIBFT = ./libft/libft.a
 LIBINC = ./libft/
 
 CC = gcc
-CFLAGS =
+CFLAGS = -Wall -Wextra -Werror
 
 all: $(NAME)
 

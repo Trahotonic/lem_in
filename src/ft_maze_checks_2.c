@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../inc/lem-inc.h"
+#include "../inc/lemin.h"
 
 void	ft_free_dump(char **dump)
 {
@@ -29,7 +29,18 @@ int		ft_is_room(char *line)
 {
 	char	**work;
 	size_t	n;
+	size_t	spaces;
 
+	n = 0;
+	spaces = 0;
+	while (line[n] != '\0')
+	{
+		if (line[n] == ' ')
+			spaces += 1;
+		n += 1;
+	}
+	if (spaces > 2)
+		return (0);
 	work = ft_strsplit(line, ' ');
 	n = 0;
 	while (work[n] != 0)

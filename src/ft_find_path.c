@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../inc/lem-inc.h"
+#include "../inc/lemin.h"
 
 int		ft_finish_has_connection_to_start(t_link *links)
 {

@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../inc/lem-inc.h"
+#include "../inc/lemin.h"
 
 static int	ft_ret_er(char **line)
 {

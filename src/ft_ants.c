@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../inc/lem-inc.h"
+#include "../inc/lemin.h"
 
 size_t	ft_get_min(t_link *path)
 {
@@ -83,10 +83,11 @@ void	ft_increase(t_link *path, size_t ants_q)
 	}
 }
 
-void	ft_move_ants(size_t ants_q, t_link *path, t_room *rooms)
+int		ft_move_ants(size_t ants_q, t_link *path, t_room *rooms)
 {
 	path = path->next;
 	path->station->ant_nbr = 1;
+	ft_printf("\n");
 	if (ants_q > 1)
 	{
 		ft_printf("L1-%s\n", path->station->room_name);
@@ -102,4 +103,5 @@ void	ft_move_ants(size_t ants_q, t_link *path, t_room *rooms)
 			ft_printf("L1-%s\n", path->station->room_name);
 			path = path->next;
 		}
+	return (0);
 }

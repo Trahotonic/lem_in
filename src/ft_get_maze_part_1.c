@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../inc/lem-inc.h"
+#include "../inc/lemin.h"
 
 static int	ft_init_maze(size_t *ants_q, char **line)
 {
@@ -57,7 +57,7 @@ static int	ft_init_rooms(t_room **start, char *line)
 	else if ((ft_strequ(line, "##start") || ft_strequ(line, "##end")))
 	{
 		ft_skip_comments(&work);
-		if (!ft_is_room(work))
+		if (!ft_is_room(work) || ft_invalid_coordinates(work))
 		{
 			free(work);
 			return (ft_return_error(&line));

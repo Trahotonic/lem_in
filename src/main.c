@@ -10,9 +10,32 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../inc/lem-inc.h"
+#include "../inc/lemin.h"
 
-int	main(void)
+static void	ft_check_debug(int argc, char **argv, t_room *start, t_link *path)
+{
+	int		n;
+	int		m;
+	int		p;
+
+	n = 1;
+	m = 0;
+	p = 0;
+	while (n < argc)
+	{
+		if (ft_strequ(argv[n], "-m"))
+			m = 1;
+		if (ft_strequ(argv[n], "-p"))
+			p = 1;
+		n += 1;
+	}
+	if (m)
+		ft_print_maze(start);
+	if (p)
+		ft_print_path(path);
+}
+
+int			main(int argc, char **argv)
 {
 	t_room	*start;
 	size_t	ants_q;
@@ -20,6 +43,7 @@ int	main(void)
 	t_link	*path;
 	char	*line;
 
+	line = NULL;
 	if (!ft_get_maze_part_1(&start, &ants_q, &transfer, line))
 		return (1);
 	if (!ft_get_maze_part_2(&start, transfer))
@@ -28,14 +52,13 @@ int	main(void)
 		path = ft_find_path(start);
 		if (!path)
 			return (ft_printf("Error\n"));
-		ft_move_ants(ants_q, path, start);
-		return (0);
+		ft_check_debug(argc, argv, start, path);
+		return (ft_move_ants(ants_q, path, start));
 	}
-	ft_printf("\n");
 	ft_set_depth(start);
 	path = ft_find_path(start);
 	if (!path)
 		return (ft_printf("Error\n"));
-	ft_move_ants(ants_q, path, start);
-	return (0);
+	ft_check_debug(argc, argv, start, path);
+	return (ft_move_ants(ants_q, path, start));
 }
