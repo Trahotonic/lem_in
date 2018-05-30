@@ -18,6 +18,7 @@ void	ft_print_maze(t_room *start)
 	t_link *ptr2;
 
 	ptr = start;
+	ft_printf("\n");
 	while (ptr != NULL)
 	{
 		ft_printf("%s [%ld] [%ld]", ptr->room_name, ptr->x, ptr->y);
@@ -56,7 +57,7 @@ int		ft_return_error(char **line)
 {
 	if (line && *line)
 		ft_strdel(line);
-	ft_putendl_fd("Error", 1);
+	ft_putendl_fd("\033[1;31mError\e[m", 1);
 	return (0);
 }
 
@@ -65,6 +66,21 @@ int		ft_invalid_command(char *line)
 	if (ft_strlen(line) >= 3 && line[0] == '#' && line[1] == '#' &&
 		line[2] != '#' && !ft_strequ(line, "##start") &&
 		!ft_strequ(line, "##end"))
+		return (1);
+	return (0);
+}
+
+int		ft_is_one_station(t_link *path)
+{
+	int length;
+
+	length = 0;
+	while (path)
+	{
+		length += 1;
+		path = path->next;
+	}
+	if (length == 1)
 		return (1);
 	return (0);
 }

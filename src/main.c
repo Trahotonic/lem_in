@@ -51,14 +51,14 @@ int			main(int argc, char **argv)
 		ft_set_depth(start);
 		path = ft_find_path(start);
 		if (!path)
-			return (ft_printf("Error\n"));
+			return (ft_printf("\033[1;31mError\e[m\n"));
 		ft_check_debug(argc, argv, start, path);
 		return (ft_move_ants(ants_q, path, start));
 	}
 	ft_set_depth(start);
 	path = ft_find_path(start);
 	if (!path)
-		return (ft_printf("Error\n"));
+		return (ft_printf("\033[1;31mError\e[m\n"));
 	ft_check_debug(argc, argv, start, path);
 	return (ft_move_ants(ants_q, path, start));
 }

@@ -37,7 +37,6 @@ void	ft_start_or_end(char *line, char *work, t_room **start)
 
 int		ft_case_start(t_room **start, char **line)
 {
-	ft_printf("we here\n");
 	ft_printf("%s\n", *line);
 	if (!ft_start_exists(*start))
 	{
