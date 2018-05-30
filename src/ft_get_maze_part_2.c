@@ -39,7 +39,7 @@ int			ft_both_rooms_exist(char *line, t_room *start)
 			ret = 1;
 		ptr = ptr->next;
 	}
-	if (!ret)
+	if (!ret || ft_strequ(dump[0], dump[1]))
 		return (ft_ret_dump(dump));
 	ret = 0;
 	ptr = start;
