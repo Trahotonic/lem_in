@@ -14,10 +14,20 @@
 
 int	ft_invalid_coordinates(char *line)
 {
-	char **dump;
+	char	**dump;
+	size_t	n;
+	int		sign;
 
+	n = 0;
+	sign = 0;
+	while (line[n] != '\0')
+	{
+		if (line[n] == '-' || line[n] == '+')
+			sign += 1;
+		n += 1;
+	}
 	dump = ft_strsplit(line, ' ');
-	if (dump[0][0] == 'L')
+	if (dump[0][0] == 'L' || sign > 1)
 	{
 		ft_free_dump(dump);
 		return (1);

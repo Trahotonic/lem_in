@@ -48,14 +48,14 @@ static int	ft_init_rooms(t_room **start, char *line)
 	{
 		if (ft_invalid_coordinates(line))
 			return (ft_return_error(&line));
-		if (!ft_invalid_command(line))
-			ft_printf("%s\n", line);
+		ft_printf("%s\n", line);
 		*start = ft_new_room(line, 0);
 		free(line);
 		return (1);
 	}
 	else if ((ft_strequ(line, "##start") || ft_strequ(line, "##end")))
 	{
+		ft_printf("%s\n", line);
 		ft_skip_comments(&work);
 		if (!ft_is_room(work) || ft_invalid_coordinates(work))
 		{

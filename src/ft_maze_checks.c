@@ -66,11 +66,14 @@ int	ft_invalid_ants(char *line, size_t *ants_q)
 int	ft_is_all_digit(char *line)
 {
 	size_t	n;
+	int		sign;
 
 	n = 0;
+	sign = 0;
 	while (line[n] != '\0')
 	{
-		if (!ft_isdigit(line[n]))
+		if ((!ft_isdigit(line[n]) && line[n] != '-' && line[n] != '+') ||
+			(n != 0 && (line[n] == '-' || line[n] == '+')))
 		{
 			return (0);
 		}

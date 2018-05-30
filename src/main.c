@@ -30,7 +30,10 @@ static void	ft_check_debug(int argc, char **argv, t_room *start, t_link *path)
 		n += 1;
 	}
 	if (m)
+	{
+		ft_printf("\n");
 		ft_print_maze(start);
+	}
 	if (p)
 		ft_print_path(path);
 }

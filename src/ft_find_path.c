@@ -64,3 +64,20 @@ t_link	*ft_find_path(t_room *rooms)
 	}
 	return (ret);
 }
+
+int		ft_if_one_station(t_link *path, size_t ants_q)
+{
+	size_t n;
+
+	n = 0;
+	while (n < ants_q)
+	{
+		ft_printf("L%zu-%s", n + 1, path->station->room_name);
+		if (n + 1 == ants_q)
+			ft_printf("\n");
+		else
+			ft_printf(" ");
+		n += 1;
+	}
+	return (0);
+}

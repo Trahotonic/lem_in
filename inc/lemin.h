@@ -69,6 +69,7 @@ void				ft_set_depth(t_room *start);
 t_link				*ft_find_path(t_room *rooms);
 void				ft_print_path(t_link *path);
 void				ft_print_maze(t_room *start);
+int					ft_if_one_station(t_link *path, size_t ants_q);
 int					ft_is_one_station(t_link *path);
 int					ft_move_ants(size_t ants_q, t_link *path, t_room *rooms);
 

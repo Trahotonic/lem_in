@@ -85,27 +85,13 @@ void	ft_increase(t_link *path, size_t ants_q)
 
 int		ft_move_ants(size_t ants_q, t_link *path, t_room *rooms)
 {
-	size_t n;
-
-	n = 0;	
 	path = path->next;
 	path->station->ant_nbr = 1;
 	ft_printf("\n");
 	if (ants_q > 1)
 	{
 		if (ft_is_one_station(path))
-		{
-			while (n < ants_q)
-			{
-				ft_printf("L%zu-%s", n + 1, path->station->room_name);
-				if (n + 1 == ants_q)
-					ft_printf("\n");
-				else
-					ft_printf(" ");
-				n += 1;
-			}
-			return (0);
-		}
+			return (ft_if_one_station(path, ants_q));
 		ft_printf("L1-%s\n", path->station->room_name);
 		while (ft_destination(rooms)->ant_nbr != ants_q)
 		{
