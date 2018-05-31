@@ -38,30 +38,45 @@ static void	ft_check_debug(int argc, char **argv, t_room *start, t_link *path)
 		ft_print_path(path);
 }
 
-int			main(int argc, char **argv)
+static int	ft_do_thing(t_room *start, int argc, char **argv, size_t ants_q)
 {
-	t_room	*start;
-	size_t	ants_q;
-	char	*transfer;
-	t_link	*path;
-	char	*line;
+	t_link *path;
 
-	line = NULL;
-	if (!ft_get_maze_part_1(&start, &ants_q, &transfer, line))
-		return (1);
-	if (!ft_get_maze_part_2(&start, transfer))
-	{
-		ft_set_depth(start);
-		path = ft_find_path(start);
-		if (!path)
-			return (ft_printf("\033[1;31mError\e[m\n"));
-		ft_check_debug(argc, argv, start, path);
-		return (ft_move_ants(ants_q, path, start));
-	}
 	ft_set_depth(start);
 	path = ft_find_path(start);
 	if (!path)
 		return (ft_printf("\033[1;31mError\e[m\n"));
 	ft_check_debug(argc, argv, start, path);
 	return (ft_move_ants(ants_q, path, start));
+}
+
+static int	ft_invalid_flags(int argc, char **argv)
+{
+	int n;
+
+	n = 1;
+	while (n < argc)
+	{
+		if (!ft_strequ(argv[n], "-p") && !ft_strequ(argv[n], "-m"))
+			return (1);
+		n += 1;
+	}
+	return (0);
+}
+
+int			main(int argc, char **argv)
+{
+	t_room	*start;
+	size_t	ants_q;
+	char	*transfer;
+	char	*line;
+
+	if (argc > 1 && ft_invalid_flags(argc, argv))
+		return (ft_printf("Invalid arguments\n"));
+	line = NULL;
+	if (!ft_get_maze_part_1(&start, &ants_q, &transfer, line))
+		return (1);
+	if (!ft_get_maze_part_2(&start, transfer))
+		return (ft_do_thing(start, argc, argv, ants_q));
+	return (ft_do_thing(start, argc, argv, ants_q));
 }

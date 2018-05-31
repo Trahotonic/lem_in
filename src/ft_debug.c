@@ -14,21 +14,21 @@
 
 void	ft_print_maze(t_room *start)
 {
-	t_room *ptr;
+	t_room *p;
 	t_link *ptr2;
 
-	ptr = start;
-	while (ptr != NULL)
+	p = start;
+	while (p != NULL)
 	{
-		ft_printf("\033[0;36m%s\e[m [%ld] [%ld]", ptr->room_name, ptr->x, ptr->y);
-		if (ptr->start == 1)
-			ft_printf(" start");
-		if (ptr->end == 1)
-			ft_printf(" end");
-		ptr->depth == -1 ? ft_printf("\n\033[0;31mNot connected to start\e[m") :
-		ft_printf("\nDepth = %ld", ptr->depth);
+		ft_printf("\033[0;36m%s\e[m [%ld] [%ld]", p->room_name, p->x, p->y);
+		if (p->start == 1)
+			ft_printf(" \033[1;34mstart\e[m");
+		if (p->end == 1)
+			ft_printf(" \033[1;34mend\e[m");
+		p->depth == -1 ? ft_printf("\n\033[0;31mNot connected to start\e[m") :
+		ft_printf("\nDepth = %ld", p->depth);
 		ft_printf("\nLinks: ");
-		ptr2 = ptr->links;
+		ptr2 = p->links;
 		while (ptr2 != NULL)
 		{
 			ft_printf("\033[0;33m%s\e[m", ptr2->station->room_name);
@@ -37,7 +37,7 @@ void	ft_print_maze(t_room *start)
 			ptr2 = ptr2->next;
 		}
 		ft_printf("\n\n");
-		ptr = ptr->next;
+		p = p->next;
 	}
 }
 
