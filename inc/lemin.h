@@ -62,6 +62,7 @@ int					ft_case_start(t_room **start, char **line);
 int					ft_case_end(t_room **start, char **line);
 void				ft_shmatochok(char **line);
 int					ft_invalid_command(char *line);
+int					ft_link_exists(t_room *start, char *from, char *to);
 int					ft_get_maze_part_1(t_room **start, size_t *ants_q,
 										char **transfer, char *line);
 int					ft_get_maze_part_2(t_room **start, char *transfer);

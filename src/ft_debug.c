@@ -69,6 +69,7 @@ int		ft_invalid_command(char *line)
 		line[2] != '#' && !ft_strequ(line, "##start") &&
 		!ft_strequ(line, "##end"))
 		return (1);
+	ft_printf("%s\n", line);
 	return (0);
 }
 

@@ -53,14 +53,17 @@ int			ft_both_rooms_exist(char *line, t_room *start)
 	return (ret);
 }
 
-void		ft_add(char *line, t_room **start)
+static int	ft_add(char *line, t_room **start)
 {
 	char **dump;
 
 	dump = ft_strsplit(line, '-');
+	if (ft_link_exists(*start, dump[0], dump[1]))
+		return (0);
 	ft_add_link(dump[0], dump[1], start);
 	ft_add_link(dump[1], dump[0], start);
 	ft_free_dump(dump);
+	return (1);
 }
 
 int			ft_get_maze_part_2(t_room **start, char *transfer)
@@ -76,16 +79,15 @@ int			ft_get_maze_part_2(t_room **start, char *transfer)
 			return (ft_ret_er(&line));
 		if (ft_is_comment(line))
 		{
-			if (!ft_invalid_command(line))
-				ft_printf("%s\n", line);
+			ft_invalid_command(line);
 			ft_strdel(&line);
 			continue;
 		}
 		if (!ft_both_rooms_exist(line, *start))
 			return (ft_ret_er(&line));
-		ft_add(line, start);
-		if (!ft_invalid_command(line))
-			ft_printf("%s\n", line);
+		if (!ft_add(line, start))
+			return (ft_ret_er(&line));
+		ft_invalid_command(line);
 		ft_strdel(&line);
 	}
 	ft_strdel(&line);

@@ -81,3 +81,23 @@ int		ft_if_one_station(t_link *path, size_t ants_q)
 	}
 	return (0);
 }
+
+int		ft_link_exists(t_room *start, char *from, char *to)
+{
+	t_link *links;
+
+	while (start && !ft_strequ(start->room_name, from) &&
+		!ft_strequ(start->room_name, to))
+		start = start->next;
+	if (!start)
+		return (0);
+	links = start->links;
+	while (links)
+	{
+		if (ft_strequ(links->station->room_name, from) ||
+			ft_strequ(links->station->room_name, to))
+			return (1);
+		links = links->next;
+	}
+	return (0);
+}
