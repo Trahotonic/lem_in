@@ -27,13 +27,14 @@ int	ft_invalid_coordinates(char *line)
 		n += 1;
 	}
 	dump = ft_strsplit(line, ' ');
-	if (dump[0][0] == 'L' || sign > 1)
+	if (dump[0][0] == 'L' || sign > 1 || !ft_is_all_digit(dump[1]) ||
+		!ft_is_all_digit(dump[2]) || ft_atoi(dump[1]) > 2147483647 ||
+		ft_atoi(dump[1]) < -2147483648 || ft_atoi(dump[2]) > 2147483647 ||
+		ft_atoi(dump[2]) < -2147483648)
 	{
 		ft_free_dump(dump);
 		return (1);
 	}
-	if (!ft_is_all_digit(dump[1]) || !ft_is_all_digit(dump[2]))
-		return (1);
 	ft_free_dump(dump);
 	return (0);
 }

@@ -59,7 +59,10 @@ static int	ft_add(char *line, t_room **start)
 
 	dump = ft_strsplit(line, '-');
 	if (ft_link_exists(*start, dump[0], dump[1]))
+	{
+		ft_free_dump(dump);
 		return (0);
+	}
 	ft_add_link(dump[0], dump[1], start);
 	ft_add_link(dump[1], dump[0], start);
 	ft_free_dump(dump);
