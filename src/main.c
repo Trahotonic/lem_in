@@ -23,9 +23,9 @@ static void	ft_check_debug(int argc, char **argv, t_room *start, t_link *path)
 	p = 0;
 	while (n < argc)
 	{
-		if (ft_strequ(argv[n], "-m"))
+		if (!ft_strcmp(argv[n], "-m"))
 			m = 1;
-		if (ft_strequ(argv[n], "-p"))
+		if (!ft_strcmp(argv[n], "-p"))
 			p = 1;
 		n += 1;
 	}
