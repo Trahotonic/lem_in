@@ -45,7 +45,7 @@ static int	ft_do_thing(t_room *start, int argc, char **argv, size_t ants_q)
 	ft_set_depth(start);
 	path = ft_find_path(start);
 	if (!path)
-		return (ft_printf("\033[1;31mError\e[m\n"));
+		return (ft_printf("\033[1;31mERROR\e[m\n"));
 	ft_check_debug(argc, argv, start, path);
 	return (ft_move_ants(ants_q, path, start));
 }

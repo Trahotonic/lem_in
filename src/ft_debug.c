@@ -59,7 +59,7 @@ int		ft_return_error(char **line)
 {
 	if (line && *line)
 		ft_strdel(line);
-	ft_putendl_fd("\033[1;31mError\e[m", 1);
+	ft_putendl_fd("\033[1;31mERROR\e[m", 1);
 	return (0);
 }
 
