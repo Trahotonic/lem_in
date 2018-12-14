@@ -156,6 +156,6 @@ L3-1
 Project is written in accordance with the Norm (SNAKE_CASE, maximum of 25 lines per function, tabulations before function names etc).
 
 ## Installation
-Run `make` in project directory to compile executable file called ft_ssl.<br />
+Run `make` in project directory to compile executable file called lem-in.<br />
 Run `make clean` to delete object files.<br />
 Run `make fclean` to delete object files and executable.
